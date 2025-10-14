@@ -2,13 +2,13 @@
 
 **Engenheiro de Inteligência Artificial | Especialista em Agentes de IA para negocios**
 
-Engenheiro de IA com experiência plena em desenvolvimento de soluções inteligentes para o setor de saúde, com foco em agentes conversacionais e análise automatizada de documentos médicos. Minha expertise combina frameworks modernos de IA com práticas sólidas de MLOps para entregar soluções que geram impacto real nos negócios.
+Engenheiro de IA com experiência plena em desenvolvimento de soluções inteligentes para o setor de saúde, com foco em agentes conversacionais e análise automatizada de documentos. Minha expertise combina frameworks modernos de IA com práticas sólidas de MLOps para entregar soluções que geram impacto real nos negócios.
 
 ---
 
 ## 🎯 Áreas de Especialização
 
-Minha atuação profissional concentra-se no desenvolvimento de sistemas de inteligência artificial aplicados ao contexto médico e de saúde. Trabalho com **agentes de IA** que automatizam processos críticos, desde o atendimento inicial até a análise de documentação complexa. Utilizo técnicas avançadas de **Processamento de Linguagem Natural (PLN)** para criar sistemas que compreendem, classificam e extraem informações relevantes de textos médicos, sempre com foco em precisão e confiabilidade.
+Minha atuação profissional concentra-se no desenvolvimento de sistemas de inteligência artificial aplicados ao contexto médico e de saúde. Trabalho com **agentes de IA** que automatizam processos críticos, desde o atendimento inicial até a análise de documentação complexa. Utilizo técnicas avançadas de **Processamento de Linguagem Natural (PLN)** para criar sistemas que compreendem, classificam e extraem informações relevantes de textos, sempre com foco em precisão e confiabilidade.
 
 No campo de **MLOps**, implemento pipelines robustos utilizando **Azure** e **Databricks** para garantir que os modelos desenvolvidos sejam escaláveis, monitoráveis e possam ser implantados em ambientes de produção com segurança. Minha experiência abrange todo o ciclo de vida de projetos de IA, desde a concepção até a entrega de valor mensurável para os stakeholders.
 
