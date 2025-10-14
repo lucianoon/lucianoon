@@ -1,6 +1,6 @@
 # Luciano Oliveira
 
-**Engenheiro de Inteligência Artificial | Especialista em Agentes de IA para Saúde**
+**Engenheiro de Inteligência Artificial | Especialista em Agentes de IA para negocios**
 
 Engenheiro de IA com experiência plena em desenvolvimento de soluções inteligentes para o setor de saúde, com foco em agentes conversacionais e análise automatizada de documentos médicos. Minha expertise combina frameworks modernos de IA com práticas sólidas de MLOps para entregar soluções que geram impacto real nos negócios.
 
