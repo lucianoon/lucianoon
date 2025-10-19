@@ -1,93 +1,107 @@
-# Luciano Oliveira
+Luciano Oliveira
+Engenheiro de Inteligência Artificial | Especialista em Agentes de IA para Negócios
 
-**Engenheiro de Inteligência Artificial | Especialista em Agentes de IA para negocios**
+Desenvolvedor de soluções de IA com foco em automação inteligente e processamento de linguagem natural. Experiência em criar sistemas que combinam LLMs, agentes autônomos e MLOps para resolver problemas reais de negócios, especialmente no setor de saúde e serviços.
 
-Engenheiro de IA com experiência plena em desenvolvimento de soluções inteligentes para o setor de saúde, com foco em agentes conversacionais e análise automatizada de documentos. Minha expertise combina frameworks modernos de IA com práticas sólidas de MLOps para entregar soluções que geram impacto real nos negócios.
+🎯 Áreas de Atuação
+Trabalho com desenvolvimento de sistemas baseados em agentes de IA que automatizam processos complexos em ambientes corporativos. Minha especialização está em Processamento de Linguagem Natural (PLN) aplicado a contextos específicos, onde a compreensão e extração de informações de textos não estruturados é crítica para o negócio.
 
----
+Tenho experiência prática com frameworks modernos de IA como LangChain e CrewAI, que utilizo para construir pipelines de processamento inteligente. No lado de infraestrutura, trabalho com Azure e Databricks para garantir que as soluções sejam escaláveis e possam ser mantidas em produção de forma sustentável.
 
-## 🎯 Áreas de Especialização
+Meu diferencial está em entender tanto a parte técnica quanto o contexto de negócio, traduzindo problemas complexos em soluções de IA que realmente funcionam no dia a dia das empresas.
 
-Minha atuação profissional concentra-se no desenvolvimento de sistemas de inteligência artificial aplicados ao contexto médico e de saúde. Trabalho com **agentes de IA** que automatizam processos críticos, desde o atendimento inicial até a análise de documentação complexa. Utilizo técnicas avançadas de **Processamento de Linguagem Natural (PLN)** para criar sistemas que compreendem, classificam e extraem informações relevantes de textos, sempre com foco em precisão e confiabilidade.
+💼 Projetos em Destaque
+Agente de IA para Atendimento em Clínicas
+Desenvolvi um sistema de agente conversacional para automatizar a triagem inicial de pacientes em clínicas médicas. O objetivo era reduzir a carga de trabalho da recepção e melhorar a experiência do paciente ao fornecer respostas rápidas sobre sintomas e urgência.
 
-No campo de **MLOps**, implemento pipelines robustos utilizando **Azure** e **Databricks** para garantir que os modelos desenvolvidos sejam escaláveis, monitoráveis e possam ser implantados em ambientes de produção com segurança. Minha experiência abrange todo o ciclo de vida de projetos de IA, desde a concepção até a entrega de valor mensurável para os stakeholders.
+O sistema foi construído utilizando LangChain para orquestrar a comunicação com modelos de linguagem e CrewAI para coordenar diferentes componentes especializados. Implementei agentes específicos para:
 
----
+	•	Triagem automatizada: Coleta de informações sobre sintomas e histórico médico através de conversação natural
+	•	Classificação de urgência: Análise do contexto para determinar a prioridade do atendimento
+	•	Análise de sentimentos: Detecção de estados emocionais para identificar casos que requerem atenção imediata
 
-## 💼 Projetos em Destaque
+A solução foi implantada em ambiente Azure com monitoramento via Databricks, permitindo acompanhar a performance dos modelos e ajustar conforme necessário.
 
-### Agente de IA para Atendimento em Clínicas
+Resultados observados:
 
-Desenvolvi um sistema completo de agente conversacional para automatizar o atendimento em clínicas médicas, com o objetivo de reduzir o tempo de espera dos pacientes e otimizar a triagem inicial. O sistema foi construído utilizando **LangChain** e **CrewAI** para orquestrar múltiplos componentes de IA que trabalham de forma coordenada.
+	•	Redução significativa no tempo de espera para triagem inicial
+	•	Melhoria na satisfação dos pacientes com atendimento mais ágil
+	•	Liberação da equipe de recepção para focar em casos mais complexos
 
-O agente é capaz de realizar triagem automatizada de pacientes, extrair informações chave de prontuários médicos e classificar o nível de urgência de cada caso. Implementei técnicas de **classificação de texto** e **análise de sentimentos** para garantir que o sistema compreenda não apenas o conteúdo das mensagens, mas também o contexto emocional dos pacientes.
+Tecnologias: Python, LangChain, CrewAI, Azure OpenAI, FastAPI, PostgreSQL
 
-Os resultados foram significativos: o projeto gerou um **aumento de 40% no ROI** da clínica, principalmente devido à redução de custos operacionais e ao aumento da capacidade de atendimento. O sistema foi implantado em produção utilizando **Azure** e **Databricks**, garantindo alta disponibilidade e escalabilidade.
+Sistema de Agentes Múltiplos para Análise de Documentos Médicos
+Projetei um sistema multi-agente para processar e extrair informações de documentos médicos, como laudos de exames e prontuários. O desafio era lidar com documentos não estruturados em diferentes formatos (PDF, imagens escaneadas, documentos Word) e extrair informações relevantes de forma consistente.
 
-**Tecnologias utilizadas:** Python, LangChain, CrewAI, Azure, Databricks, Classificação de Texto, Análise de Sentimentos
+A arquitetura utiliza múltiplos agentes especializados coordenados pelo CrewAI, onde cada agente tem uma responsabilidade específica:
 
----
+	•	Agente de Extração: Processa diferentes formatos de documento e extrai texto, incluindo OCR para documentos escaneados
+	•	Agente de Classificação: Identifica o tipo de documento e suas seções principais
+	•	Agente de NER Médico: Extrai entidades médicas específicas (diagnósticos, medicamentos, procedimentos)
+	•	Agente de Sumarização: Gera resumos estruturados focados nas informações mais relevantes
 
-### Sistema de Agentes Múltiplos para Análise de Documentos Médicos
+Utilizei LangChain para construir os pipelines de processamento e integração com modelos de linguagem. A solução inclui validação de qualidade para garantir que as informações extraídas sejam confiáveis.
 
-Projetei e implementei um sistema multi-agente especializado na análise e resumo automatizado de documentos médicos complexos. O sistema utiliza uma arquitetura de **agentes múltiplos** coordenados pelo **CrewAI**, onde cada agente é responsável por uma tarefa específica: extração de informações, classificação de conteúdo, análise de sentimentos e geração de resumos estruturados.
+Resultados observados:
 
-A solução foi desenvolvida para processar grandes volumes de documentos médicos, incluindo laudos, exames e prontuários, extraindo automaticamente informações críticas e gerando resumos concisos que facilitam a tomada de decisão clínica. Utilizei **LangChain** para construir pipelines de processamento de linguagem natural que garantem alta precisão na extração de entidades médicas e na compreensão do contexto.
+	•	Automatização do processo de análise que antes era totalmente manual
+	•	Redução do tempo necessário para revisar documentos extensos
+	•	Padronização na extração de informações críticas
 
-O impacto do projeto foi expressivo, com um **aumento de 40% no ROI** devido à redução drástica do tempo necessário para análise manual de documentos e à melhoria na qualidade das informações extraídas. A infraestrutura de MLOps foi implementada em **Azure** e **Databricks**, permitindo processamento em larga escala e monitoramento contínuo da performance dos modelos.
+Tecnologias: Python, LangChain, CrewAI, Azure OpenAI, PyPDF2, Tesseract OCR, spaCy, Drizzle ORM
 
-**Tecnologias utilizadas:** Python, LangChain, CrewAI, Azure, Databricks, Processamento de Linguagem Natural, Classificação de Texto, Análise de Sentimentos
+🛠️ Stack Tecnológico
+Frameworks de IA e Agentes
+	•	LangChain: Construção de aplicações com LLMs, chains e RAG
+	•	CrewAI: Orquestração de sistemas multi-agente
+	•	Python: Desenvolvimento de soluções de IA e automação
 
----
+Processamento de Linguagem Natural
+	•	Modelos de Linguagem: Experiência com GPT-4, Azure OpenAI
+	•	PLN Clássico: spaCy, NLTK para processamento de texto
+	•	Análise de Sentimentos: Detecção de emoções e urgência em textos
+	•	NER (Named Entity Recognition): Extração de entidades específicas de domínio
 
-## 🛠️ Stack Tecnológico
+MLOps e Cloud
+	•	Azure: Hospedagem e orquestração de serviços de IA
+	•	Databricks: Processamento de dados e gerenciamento de pipelines
+	•	FastAPI: Desenvolvimento de APIs para servir modelos
+	•	PostgreSQL: Armazenamento de dados estruturados
 
-Minha experiência técnica abrange um conjunto robusto de ferramentas e frameworks que me permitem desenvolver soluções completas de IA, desde a prototipagem até a implantação em produção.
+Ferramentas de Desenvolvimento
+	•	Git/GitHub: Versionamento e colaboração
+	•	Docker: Containerização de aplicações
+	•	Jupyter: Prototipagem e experimentação
 
-**Frameworks de IA e Agentes:**
-- **LangChain**: Desenvolvimento de aplicações complexas de PLN com encadeamento de modelos de linguagem
-- **CrewAI**: Orquestração de sistemas multi-agente para tarefas colaborativas
-- **Python**: Linguagem principal para desenvolvimento de soluções de IA
+🎓 Aprendizado Contínuo
+Mantenho-me atualizado com as últimas tendências em IA através de estudo constante e experimentação prática. Alguns repositórios de aprendizado:
 
-**Técnicas de Machine Learning:**
-- **Processamento de Linguagem Natural (PLN)**: Compreensão e geração de texto em contextos médicos
-- **Classificação de Texto**: Categorização automática de documentos e mensagens
-- **Análise de Sentimentos**: Detecção de estados emocionais e urgência em comunicações
+	•	resumoAZURE - Anotações sobre Microsoft Azure
+	•	resumo-do-lab - Experimentos práticos com IA
+	•	ai-agents-for-beginners - Recursos sobre agentes de IA
+	•	generative-ai-for-beginners - Fundamentos de IA generativa
 
-**MLOps e Cloud:**
-- **Azure**: Plataforma cloud para hospedagem e orquestração de serviços de IA
-- **Databricks**: Processamento distribuído e gerenciamento de pipelines de dados e modelos
+💡 Abordagem de Trabalho
+Acredito que boas soluções de IA vêm da combinação de três elementos:
 
----
+	1.	Compreensão profunda do problema de negócio: Antes de pensar em tecnologia, é essencial entender o contexto, as dores reais e as métricas que importam.
+	2.	Escolha pragmática de ferramentas: Nem todo problema precisa de deep learning. Às vezes, uma solução mais simples com LLMs bem orquestrados entrega mais valor.
+	3.	Foco em produção desde o início: Protótipos são importantes, mas só geram valor quando funcionam de forma confiável em produção. Por isso, sempre penso em escalabilidade, monitoramento e manutenibilidade.
 
-## 📊 Impacto e Resultados
+🌱 Interesses Atuais
+Estou particularmente interessado em:
 
-Ao longo da minha carreira como Engenheiro de IA, tenho me dedicado a desenvolver soluções que não apenas demonstram excelência técnica, mas que também geram valor tangível para os negócios. Os projetos que liderei resultaram em **aumento médio de 40% no ROI** das organizações, principalmente através da automação de processos críticos, redução de custos operacionais e melhoria na qualidade dos serviços prestados.
+	•	Agentes autônomos que podem tomar decisões e executar tarefas complexas
+	•	RAG (Retrieval-Augmented Generation) para melhorar a precisão de respostas em domínios específicos
+	•	Fine-tuning de modelos para contextos especializados, especialmente na área médica
+	•	Avaliação de modelos de IA e técnicas para garantir qualidade e confiabilidade
 
-Meu foco está sempre em compreender profundamente os problemas de negócio antes de propor soluções tecnológicas, garantindo que cada projeto entregue resultados mensuráveis e sustentáveis. A combinação de expertise técnica em IA com conhecimento de práticas de MLOps me permite entregar sistemas robustos, escaláveis e prontos para produção.
+📫 Contato
+Estou aberto a discutir oportunidades de colaboração em projetos de IA, especialmente aqueles que envolvem automação inteligente, processamento de linguagem natural ou aplicações no setor de saúde.
 
----
+	•	LinkedIn: linkedin.com/in/luciano-oliveira-nunes
+	•	GitHub: @lucianoon
+	•	Email: lucianomevam@outlook.com
 
-## 📚 Repositórios de Aprendizado
 
-Além dos projetos profissionais, mantenho repositórios com recursos educacionais e experimentos:
-
-- [**resumoAZURE**](https://github.com/lucianoon/resumoAZURE) - Anotações e recursos sobre Microsoft Azure
-- [**resumo-do-lab**](https://github.com/lucianoon/resumo-do-lab) - Resumos de laboratórios e experimentos práticos
-- [**ai-agents-for-beginners**](https://github.com/lucianoon/ai-agents-for-beginners) - Recursos para aprender sobre agentes de IA
-- [**generative-ai-for-beginners**](https://github.com/lucianoon/generative-ai-for-beginners) - Guias introdutórios de IA generativa
-
----
-
-## 📫 Contato
-
-Estou sempre aberto a discutir oportunidades de colaboração em projetos desafiadores de Inteligência Artificial, especialmente aqueles que envolvem aplicações no setor de saúde e desenvolvimento de agentes inteligentes.
-
-**GitHub:** [github.com/lucianoon](https://github.com/lucianoon)
-
----
-
-## 📈 Estatísticas do GitHub
-
-![lucianoon's GitHub stats](https://github-readme-stats.vercel.app/api?username=lucianoon&show_icons=true&theme=default&hide_title=true)
-
+💡 Interessado em IA aplicada a negócios reais? Sinta-se à vontade para explorar meus repositórios e entrar em contato!
