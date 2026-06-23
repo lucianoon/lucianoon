@@ -1,52 +1,96 @@
+# Olá, eu sou Luciano Nunes 👋
 
-### Olá, eu sou o Luciano! 👋
+**Engenheiro de IA, Data Science e Especialista em Agentes de IA.**  
+Crio soluções aplicadas com **LLMs, RAG, sistemas multiagentes, automação inteligente e aplicações Python/TypeScript** para resolver problemas reais em saúde, logística, recrutamento e produtividade.
 
-Sou um Engenheiro de Inteligência Artificial apaixonado por criar soluções que resolvem problemas complexos do mundo real. Minha jornada no universo da IA é impulsionada pela busca contínua por inovação e pela crença de que a tecnologia pode transformar negócios e vidas.
+---
 
-Com uma base sólida em **Data Science** e especialização em **Agentes de IA para Negócios**, meu foco é desenvolver sistemas inteligentes que automatizam processos, extraem insights valiosos de dados e interagem de forma natural com os usuários. Tenho um interesse particular no setor de **saúde**, onde a IA pode ter um impacto profundo na eficiência e na qualidade do atendimento.
+## 🚀 Foco atual
 
-### 🚀 O que eu faço
+- 🤖 **Agentes de IA e sistemas multiagentes**
+- 📚 **RAG / Retrieval-Augmented Generation** e busca semântica
+- 🧠 **Data Science, Machine Learning e automação com Python**
+- 🏥 IA aplicada à saúde, atendimento e análise de documentos
+- 🚚 Otimização logística e aplicações orientadas a negócio
+- 🌐 Aplicações fullstack com TypeScript, React e APIs
 
-- **Desenvolvimento de Agentes de IA:** Crio agentes autônomos e sistemas multi-agente utilizando frameworks como **LangChain** e **CrewAI** para orquestrar tarefas complexas e inteligentes.
-- **Processamento de Linguagem Natural (PLN):** Tenho experiência com técnicas avançadas de PLN, incluindo **RAG (Retrieval-Augmented Generation)**, análise de sentimentos e extração de entidades (NER) para compreender e processar informações de textos não estruturados.
-- **MLOps e Cloud:** Implemento soluções escaláveis e sustentáveis na nuvem, utilizando **Azure** e **Databricks** para hospedar, orquestrar e monitorar serviços de IA.
-- **Desenvolvimento de APIs:** Construo APIs robustas com **FastAPI** para servir modelos de IA e integrar soluções em sistemas existentes.
+---
 
-### 🛠️ Meu Stack Tecnológico
+## 🧩 Projetos em destaque
 
-| Categoria | Tecnologias |
-| :--- | :--- |
-| **Linguagens** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) |
-| **Frameworks de IA** | ![LangChain](https://img.shields.io/badge/LangChain-00865D?style=for-the-badge) ![CrewAI](https://img.shields.io/badge/CrewAI-00BFFF?style=for-the-badge) |
-| **Cloud & MLOps** | ![Microsoft Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white) ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) |
-| **Bancos de Dados** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) |
-| **Desenvolvimento** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white) |
+### 🏥 [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor)
+Sistema inteligente de monitoramento de SRAG com Python, análise de dados e geração de relatórios.  
+**Stack:** Python, Data Science, automação, análise epidemiológica.
 
-### ✨ Projetos em Destaque
+### 🤖 [Multi-Agents Recrutadores](https://github.com/lucianoon/multi-agents-recrutadores)
+Sistema multiagente para automatizar a criação de descrições de vagas de alta qualidade.  
+**Stack:** Python, agentes de IA, automação, geração de conteúdo.
 
-#### 🏥 Agente de IA para Atendimento em Clínicas
+### 🚚 [Sistema de Otimização Logística](https://github.com/lucianoon/sistema-otimizacao-logistica)
+Aplicação para otimização de rotas, custos logísticos, visualizações e análise operacional adaptada ao Brasil.  
+**Stack:** Python, Streamlit, OR-Tools, análise de dados, otimização.
 
-- **Descrição:** Um sistema de agente conversacional que automatiza a triagem inicial de pacientes, reduzindo a carga de trabalho da recepção e melhorando a experiência do paciente.
-- **Tecnologias:** Python, LangChain, CrewAI, Azure OpenAI, FastAPI.
-- **Repo:** [agente-ia-atendimento-clinicas](https://github.com/lucianoon/agente-ia-atendimento-clinicas)
+### 📚 [RAG Agentic System](https://github.com/lucianoon/Rag-Agentic-System)
+Sistema RAG agêntico para consulta inteligente de documentos usando recuperação de informação e orquestração de IA.  
+**Stack:** Python, RAG, LLMs, agentes, processamento de documentos.
 
-#### 📄 Sistema de Análise de Documentos Médicos
+### 🏥 [Agente IA para Atendimento em Clínicas](https://github.com/lucianoon/agente-ia-atendimento-clinicas)
+Agente conversacional para automatizar atendimento em clínicas médicas.  
+**Stack:** Python, LangChain, CrewAI, chatbot, healthcare AI.
 
-- **Descrição:** Um sistema multi-agente que processa e extrai informações críticas de documentos médicos em diversos formatos, automatizando uma tarefa que antes era manual e demorada.
-- **Tecnologias:** Python, LangChain, CrewAI, PyPDF2, Tesseract OCR.
-- **Repo:** [sistema-agentes-analise-documentos-medicos](https://github.com/lucianoon/sistema-agentes-analise-documentos-medicos)
+### 🌐 [Nova Forge](https://github.com/lucianoon/novaforge)
+Plataforma web de consultoria em tecnologia com front-end moderno e arquitetura fullstack.  
+**Stack:** TypeScript, React, Vite, Tailwind CSS, Node.js.
 
-### 🌱 Aprendizado Contínuo
+---
 
-Estou sempre explorando novas tecnologias e aprimorando minhas habilidades. Atualmente, meus interesses estão focados em:
+## 🛠️ Tecnologias e ferramentas
 
-- **Agentes Autônomos Complexos:** Aprofundar a capacidade dos agentes de tomar decisões e executar tarefas de forma independente.
-- **Fine-tuning de Modelos:** Ajustar modelos de linguagem para domínios específicos, como a área médica, para aumentar a precisão e a relevância das respostas.
-- **Avaliação de Modelos de IA:** Desenvolver e aplicar técnicas para garantir a qualidade, confiabilidade e ética das soluções de IA.
+<div align="left">
 
-### 📫 Vamos nos conectar!
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-Estou aberto a oportunidades de colaboração, discussões sobre IA e novos desafios. Sinta-se à vontade para entrar em contato!
+</div>
 
-- **LinkedIn:** [in/luciano-oliveira-nunes](https://www.linkedin.com/in/luciano-oliveira-nunes/)
-- **Email:** [lucianomevam@outlook.com](mailto:lucianomevam@outlook.com)
+---
+
+## 📌 Áreas de interesse
+
+```text
+AI Agents · RAG · LLMs · Data Science · Machine Learning
+Python · TypeScript · Automation · Healthcare AI · Logistics Optimization
+LangChain · CrewAI · Streamlit · React · Fullstack AI Applications
+```
+
+---
+
+## 📊 Estatísticas do GitHub
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=lucianoon&show_icons=true&theme=tokyonight&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lucianoon&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+## 📫 Vamos nos conectar
+
+Se você trabalha com **IA aplicada, automação, dados ou agentes inteligentes**, será um prazer trocar ideias e colaborar em projetos.
+
+- GitHub: [@lucianoon](https://github.com/lucianoon)
+- LinkedIn: [linkedin.com/in/luciano-oliveira-nunes](https://www.linkedin.com/in/luciano-oliveira-nunes/)
+- Email: [lucianomevam@outlook.com](mailto:lucianomevam@outlook.com)
+
+---
+
+> “Transformando dados, modelos e agentes inteligentes em soluções práticas para problemas reais.”
