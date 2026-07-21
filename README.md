@@ -24,7 +24,7 @@ Platform for building, evaluating and observing LLM agent workflows. Includes Fa
 
 Hybrid retrieval system with citations, reranking, Recall@K / MRR evaluation and an API surface for enterprise knowledge-base search.
 
-### [RAG Agentic System](https://github.com/lucianoon/Rag-Agentic-System)
+### [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system)
 
 Agentic RAG system in Python for intelligent document search, retrieval workflows and AI orchestration.
 
