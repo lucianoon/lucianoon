@@ -42,7 +42,7 @@ Fullstack technology consulting platform built with TypeScript, React, Vite and 
 
 ## Building Next
 
-- Agent Forge (in development, private): multi-agent software-delivery system on LangGraph — parallel task fan-out with merge-by-id reducers, incremental LLM-judge with objective veto, human approval gates, token/cost budget circuit breakers and durable execution with Postgres checkpoints.
+- Forgehand (in development, private): multi-agent software-delivery system on LangGraph — parallel task fan-out with merge-by-id reducers, incremental LLM-judge with objective veto, human approval gates, token/cost budget circuit breakers and durable execution with Postgres checkpoints.
 - Telecom AI Agent: multi-agent customer support workflow inspired by telecom operations.
 - LLM Evaluation Lab: framework for groundedness, latency, cost, refusal and hallucination risk.
 - Prompt Security Gateway: protection layer for prompt injection, PII detection and audit logs.
