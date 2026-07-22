@@ -38,7 +38,7 @@ Public-health reporting system (DATASUS/SIVEP-Gripe) with a multi-agent pipeline
 
 ### [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm)
 
-Parameter-efficient fine-tuning project with LoRA, T5, ROUGE evaluation, ablation, demo, tests, CI and Docker.
+Parameter-efficient fine-tuning of T5 with LoRA (rank ablation, ROUGE evaluation, tests, CI, Docker) — with a **[live demo that runs entirely in your browser](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo)** (adapter merged, exported to ONNX, INT8-quantized, served via Transformers.js).
 
 ### [NovaForge](https://github.com/lucianoon/novaforge)
 
