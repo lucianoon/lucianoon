@@ -16,6 +16,10 @@ I build practical AI systems that connect business problems to reliable software
 
 ## Production-Style AI Systems
 
+### [Forgehand](https://github.com/lucianoon/forgehand)
+
+Multi-agent software delivery system on LangGraph: parallel task fan-out with merge-by-id reducers, incremental LLM-judge with objective veto (pytest/ruff/mypy signals), human approval gates, token/cost budget circuit breakers, durable execution with Postgres checkpoints, OTel/Langfuse tracing and a mission-control dashboard.
+
 ### [FDE AI Platform](https://github.com/lucianoon/fde-ai-platform)
 
 Platform for building, evaluating and observing LLM agent workflows. Includes FastAPI contracts, workflow orchestration, evaluation hooks, trace metadata, Docker Compose and tests.
@@ -42,7 +46,6 @@ Fullstack technology consulting platform built with TypeScript, React, Vite and 
 
 ## Building Next
 
-- Forgehand (in development, private): multi-agent software-delivery system on LangGraph — parallel task fan-out with merge-by-id reducers, incremental LLM-judge with objective veto, human approval gates, token/cost budget circuit breakers and durable execution with Postgres checkpoints.
 - Telecom AI Agent: multi-agent customer support workflow inspired by telecom operations.
 - LLM Evaluation Lab: framework for groundedness, latency, cost, refusal and hallucination risk.
 - Prompt Security Gateway: protection layer for prompt injection, PII detection and audit logs.
