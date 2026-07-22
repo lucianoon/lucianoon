@@ -30,7 +30,7 @@ Agentic RAG system in Python for intelligent document search, retrieval workflow
 
 ### [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor)
 
-Applied data and AI monitoring system for public-health reporting, deterministic analytics and automated reports.
+Public-health reporting system (DATASUS/SIVEP-Gripe) with a multi-agent pipeline coordinated by a blackboard: steps declare preconditions over shared state instead of calling each other, run in parallel when ready, and persist progress per step. Failed jobs resume from the exact point of failure via a retry API endpoint. FastAPI, async worker, audit guardrails, Docker.
 
 ### [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm)
 
@@ -42,6 +42,7 @@ Fullstack technology consulting platform built with TypeScript, React, Vite and 
 
 ## Building Next
 
+- Agent Forge (in development, private): multi-agent software-delivery system on LangGraph — parallel task fan-out with merge-by-id reducers, incremental LLM-judge with objective veto, human approval gates, token/cost budget circuit breakers and durable execution with Postgres checkpoints.
 - Telecom AI Agent: multi-agent customer support workflow inspired by telecom operations.
 - LLM Evaluation Lab: framework for groundedness, latency, cost, refusal and hallucination risk.
 - Prompt Security Gateway: protection layer for prompt injection, PII detection and audit logs.
