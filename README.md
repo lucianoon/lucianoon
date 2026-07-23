@@ -22,11 +22,11 @@ Multi-agent software delivery system on LangGraph: parallel task fan-out with me
 
 ### [FDE AI Platform](https://github.com/lucianoon/fde-ai-platform)
 
-Platform for building, evaluating and observing LLM agent workflows. Includes FastAPI contracts, workflow orchestration, evaluation hooks, trace metadata, Docker Compose and tests.
+Platform for building, evaluating and observing LLM agent workflows: typed workflow state, FastAPI contracts, evaluation hooks, per-run trace metadata and Docker Compose — with a deterministic generation fallback so tests and CI run without API keys.
 
 ### [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system)
 
-Hybrid retrieval system with citations, reranking, Recall@K / MRR evaluation and an API surface for enterprise knowledge-base search.
+Retrieval-quality-first RAG engine: hybrid BM25 + vector score fusion, reranking, citations, per-stage score transparency and a Recall@K / MRR evaluation endpoint — designed so retrieval quality is measured, not assumed.
 
 ### [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system)
 
@@ -40,9 +40,19 @@ Public-health reporting system (DATASUS/SIVEP-Gripe) with a multi-agent pipeline
 
 Parameter-efficient fine-tuning of T5 with LoRA (rank ablation, ROUGE evaluation, tests, CI, Docker) — with a **[live demo that runs entirely in your browser](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo)** (adapter merged, exported to ONNX, INT8-quantized, served via Transformers.js).
 
+### [AutoDiag](https://github.com/lucianoon/autodiag)
+
+Universal OBD2 diagnostics for 2015+ vehicles: DTC reading and SAE J2012 decoding, live PIDs, local + NHTSA VIN lookup, urgency heuristics, optional AI explanations and SQLite history — CLI and FastAPI web UI, 54 unit tests, CI with uv.
+
+### [Multi-Agent Recruiters](https://github.com/lucianoon/multi-agents-recrutadores)
+
+CrewAI pipeline that turns hiring inputs into a polished job description through three specialized agents (researcher, writer, reviewer) chained across five sequential tasks — with a structural test suite that validates agent/task wiring without calling LLMs.
+
 ### [NovaForge](https://github.com/lucianoon/novaforge)
 
 Fullstack technology consulting platform built with TypeScript, React, Vite and Tailwind CSS.
+
+Every project above ships with an MIT license and GitHub Actions CI.
 
 ## Building Next
 
