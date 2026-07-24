@@ -42,7 +42,7 @@ Parameter-efficient fine-tuning of T5 with LoRA (rank ablation, ROUGE evaluation
 
 ### [AutoDiag](https://github.com/lucianoon/autodiag)
 
-Universal OBD2 diagnostics for 2015+ vehicles: DTC reading and SAE J2012 decoding, live PIDs, local + NHTSA VIN lookup, urgency heuristics, optional AI explanations and SQLite history — CLI and FastAPI web UI, 54 unit tests, CI with uv.
+Universal OBD2 diagnostics for 2015+ vehicles, **[published on PyPI](https://pypi.org/project/autodiag/)** (`pip install autodiag`): DTC reading and SAE J2012 decoding, live PIDs, local + NHTSA VIN lookup, urgency heuristics, streaming AI explanations and SQLite history — CLI and FastAPI web UI, cross-platform port autodetection, a hardware-free demo mode (`autodiag scan --demo`), 67 unit tests, ruff + mypy in CI.
 
 ### [Multi-Agent Recruiters](https://github.com/lucianoon/multi-agents-recrutadores)
 
