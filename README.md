@@ -6,6 +6,17 @@ Engenheiro de IA focado em aplicações LLM de nível de produção, sistemas ag
 
 Construo sistemas de IA práticos que ligam problemas de negócio a software confiável: APIs, workflows de agentes, pipelines de recuperação, camadas de avaliação, observabilidade, deploy e guardrails operacionais.
 
+## Projetos em destaque
+
+| Projeto | O que demonstra | Evidência |
+|---|---|---|
+| [Forgehand](https://github.com/lucianoon/forgehand) | Entrega de software com múltiplos agentes | Paralelismo, judge objetivo, gates humanos, estado durável e tracing |
+| [AutoDiag](https://github.com/lucianoon/autodiag) | Produto Python para um domínio de hardware real | [PyPI](https://pypi.org/project/autodiag/), demo sem hardware, 67 testes, CLI e interface web |
+| [Enterprise RAG](https://github.com/lucianoon/enterprise-rag-system) | Qualidade de recuperação medida | Busca híbrida, reranking, citações, Recall@K e MRR |
+| [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | Experimentação reproduzível em ML | Ablação de rank, resultados ROUGE, CI, Docker e [demo ao vivo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo) |
+| [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | IA resiliente aplicada à saúde pública | Ingestão DATASUS, jobs retomáveis, guardrails e relatório de exemplo |
+| [NovaForge](https://github.com/lucianoon/novaforge) | Engenharia de produto fullstack | React, TypeScript, Express, PostgreSQL e testes automatizados |
+
 ## Competências
 
 Todo item abaixo é exercitado por código nos repositórios deste perfil.
@@ -20,7 +31,7 @@ Todo item abaixo é exercitado por código nos repositórios deste perfil.
 - Avaliação, guardrails, log de auditoria, monitoramento de custo e latência
 - TypeScript, React, Vite (secundário)
 
-## Sistemas de IA em estilo de produção
+## Detalhes dos sistemas
 
 ### [Forgehand](https://github.com/lucianoon/forgehand)
 
@@ -55,12 +66,6 @@ Pipeline em CrewAI que transforma insumos de contratação em uma descrição de
 Plataforma fullstack de consultoria em tecnologia, construída com TypeScript, React, Vite e Tailwind CSS.
 
 Todos os projetos acima têm licença MIT e CI no GitHub Actions.
-
-## Em construção
-
-- Telecom AI Agent: workflow multiagente de atendimento ao cliente inspirado em operações de telecom.
-- LLM Evaluation Lab: framework para embasamento, latência, custo, recusa e risco de alucinação.
-- Prompt Security Gateway: camada de proteção contra prompt injection, detecção de PII e logs de auditoria.
 
 ## Posicionamento
 
