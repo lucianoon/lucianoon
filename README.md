@@ -1,65 +1,67 @@
 # Luciano de Oliveira Nunes
 
-AI Engineer focused on production-grade LLM applications, agentic systems, RAG pipelines and evaluation-driven AI platforms.
+*[English version](README.en.md)*
 
-I build practical AI systems that connect business problems to reliable software: APIs, agent workflows, retrieval pipelines, evaluation layers, observability, deployment and operational guardrails.
+Engenheiro de IA focado em aplicações LLM de nível de produção, sistemas agênticos, pipelines de RAG e plataformas de IA orientadas a avaliação.
 
-## Core Skills
+Construo sistemas de IA práticos que ligam problemas de negócio a software confiável: APIs, workflows de agentes, pipelines de recuperação, camadas de avaliação, observabilidade, deploy e guardrails operacionais.
 
-Every item below is exercised by code in the repositories on this profile.
+## Competências
+
+Todo item abaixo é exercitado por código nos repositórios deste perfil.
 
 - Python, FastAPI, Pydantic, asyncio
 - LangGraph, LangChain, CrewAI
-- RAG, agents, tool calling, structured output with JSON Schema
+- RAG, agentes, tool calling, saída estruturada com JSON Schema
 - PostgreSQL, Qdrant, Neo4j, SQLite
 - PyTorch, Transformers, PEFT/LoRA, ONNX
 - Docker, Docker Compose, GitHub Actions, ruff, mypy, pytest
-- OpenTelemetry, Langfuse, Prometheus metrics
-- Evaluation, guardrails, audit logging, cost and latency monitoring
-- TypeScript, React, Vite (secondary)
+- OpenTelemetry, Langfuse, métricas Prometheus
+- Avaliação, guardrails, log de auditoria, monitoramento de custo e latência
+- TypeScript, React, Vite (secundário)
 
-## Production-Style AI Systems
+## Sistemas de IA em estilo de produção
 
 ### [Forgehand](https://github.com/lucianoon/forgehand)
 
-Multi-agent software delivery system on LangGraph: parallel task fan-out with merge-by-id reducers, incremental LLM-judge with objective veto (pytest/ruff/mypy signals), human approval gates, token/cost budget circuit breakers, durable execution with Postgres checkpoints, OTel/Langfuse tracing and a mission-control dashboard.
+Sistema multiagente de entrega de software sobre LangGraph: fan-out paralelo de tarefas com reducers merge-by-id, judge incremental com veto objetivo (sinais de pytest/ruff/mypy), gates de aprovação humana, circuit breakers de orçamento de tokens e custo, execução durável com checkpoints em Postgres, tracing OTel/Langfuse e um dashboard de mission control.
 
 ### [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system)
 
-**Single-shot retrieval, optimized for measurable answer quality.** Hybrid BM25 + vector score fusion, heuristic reranking (title and exact-phrase overlap), grounded citations, per-stage score transparency and a Recall@K / MRR evaluation endpoint over a versioned labeled dataset. Pluggable embedders (hashing → TF-IDF → sentence-transformers) and vector stores (in-memory → Qdrant), so the whole pipeline runs offline in CI and swaps to production backends by environment variable. Built so retrieval quality is measured, not assumed.
+**Recuperação em passo único, otimizada para qualidade de resposta mensurável.** Fusão de scores híbrida BM25 + vetorial, reranking heurístico (sobreposição de título e frase exata), citações fundamentadas, transparência de score por estágio e um endpoint de avaliação Recall@K / MRR sobre um dataset rotulado e versionado. Embedders plugáveis (hashing → TF-IDF → sentence-transformers) e vector stores plugáveis (em memória → Qdrant), de modo que o pipeline inteiro roda offline na CI e troca para os backends de produção por variável de ambiente. Feito para que a qualidade da recuperação seja medida, não presumida.
 
 ### [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system)
 
-**Multi-step agent loop over retrieval, for questions one query cannot answer.** Where the Enterprise RAG engine retrieves once and answers, this one runs a Claude tool-use loop (`search_documents`, `get_task_history`): the agent decides when to search, refines the query and searches again when the first results fall short, and iterates under a bounded step cap. Answers are then scored for groundedness against the evidence the tools actually returned — a deterministic lexical proxy, not semantic entailment — and flagged when they drift. Conversational memory, a scripted offline model so the full loop is testable without API keys, and a CLI for corpus ingestion.
+**Loop de agente em múltiplos passos sobre recuperação, para perguntas que uma única consulta não responde.** Onde o Enterprise RAG recupera uma vez e responde, este roda um loop de tool use com Claude (`search_documents`, `get_task_history`): o agente decide quando buscar, refina a consulta e busca de novo quando os primeiros resultados não bastam, iterando sob um limite de passos. As respostas são então pontuadas quanto ao embasamento nas evidências que as ferramentas de fato retornaram — um proxy lexical determinístico, não implicação semântica — e sinalizadas quando divergem. Memória conversacional, um modelo scripted que torna o loop inteiro testável sem chave de API, e uma CLI para ingestão de corpus.
 
 ### [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor)
 
-Public-health reporting system (DATASUS/SIVEP-Gripe) with a multi-agent pipeline coordinated by a blackboard: steps declare preconditions over shared state instead of calling each other, run in parallel when ready, and persist progress per step. Failed jobs resume from the exact point of failure via a retry API endpoint. FastAPI, async worker, audit guardrails, Docker.
+Sistema de relatórios de saúde pública (DATASUS/SIVEP-Gripe) com pipeline multiagente coordenado por blackboard: as etapas declaram pré-condições sobre o estado compartilhado em vez de chamarem umas às outras, rodam em paralelo quando prontas e persistem progresso por etapa. Jobs que falham retomam do ponto exato da falha via endpoint de retry. FastAPI, worker assíncrono, guardrails de auditoria, Docker.
 
 ### [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm)
 
-Parameter-efficient fine-tuning of T5 with LoRA (rank ablation, ROUGE evaluation, tests, CI, Docker) — with a **[live demo that runs entirely in your browser](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo)** (adapter merged, exported to ONNX, INT8-quantized, served via Transformers.js).
+Fine-tuning eficiente em parâmetros do T5 com LoRA (ablação de rank, avaliação ROUGE, testes, CI, Docker) — com uma **[demo ao vivo que roda inteiramente no seu navegador](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo)** (adaptador mesclado, exportado para ONNX, quantizado em INT8, servido via Transformers.js).
 
 ### [AutoDiag](https://github.com/lucianoon/autodiag)
 
-Universal OBD2 diagnostics for 2015+ vehicles, **[published on PyPI](https://pypi.org/project/autodiag/)** (`pip install autodiag`): DTC reading and SAE J2012 decoding, live PIDs, local + NHTSA VIN lookup, urgency heuristics, streaming AI explanations and SQLite history — CLI and FastAPI web UI, cross-platform port autodetection, a hardware-free demo mode (`autodiag scan --demo`), 67 unit tests, ruff + mypy in CI.
+Diagnóstico OBD2 universal para veículos 2015+, **[publicado no PyPI](https://pypi.org/project/autodiag/)** (`pip install autodiag`): leitura de DTCs e decodificação SAE J2012, PIDs ao vivo, consulta de VIN local + NHTSA, heurística de urgência, explicações de IA em streaming e histórico em SQLite — CLI e interface web em FastAPI, autodetecção de porta multiplataforma, modo demo sem hardware (`autodiag scan --demo`), 67 testes unitários, ruff + mypy na CI.
 
 ### [Multi-Agent Recruiters](https://github.com/lucianoon/multi-agents-recrutadores)
 
-CrewAI pipeline that turns hiring inputs into a polished job description through three specialized agents (researcher, writer, reviewer) chained across five sequential tasks — with a structural test suite that validates agent/task wiring without calling LLMs.
+Pipeline em CrewAI que transforma insumos de contratação em uma descrição de vaga finalizada, através de três agentes especializados (pesquisador, redator, revisor) encadeados em cinco tarefas sequenciais — com uma suíte de testes estrutural que valida a ligação entre agentes e tarefas sem chamar LLM nenhum.
 
 ### [NovaForge](https://github.com/lucianoon/novaforge)
 
-Fullstack technology consulting platform built with TypeScript, React, Vite and Tailwind CSS.
+Plataforma fullstack de consultoria em tecnologia, construída com TypeScript, React, Vite e Tailwind CSS.
 
-Every project above ships with an MIT license and GitHub Actions CI.
+Todos os projetos acima têm licença MIT e CI no GitHub Actions.
 
-## Building Next
+## Em construção
 
-- Telecom AI Agent: multi-agent customer support workflow inspired by telecom operations.
-- LLM Evaluation Lab: framework for groundedness, latency, cost, refusal and hallucination risk.
-- Prompt Security Gateway: protection layer for prompt injection, PII detection and audit logs.
+- Telecom AI Agent: workflow multiagente de atendimento ao cliente inspirado em operações de telecom.
+- LLM Evaluation Lab: framework para embasamento, latência, custo, recusa e risco de alucinação.
+- Prompt Security Gateway: camada de proteção contra prompt injection, detecção de PII e logs de auditoria.
 
-## Positioning
+## Posicionamento
 
-I am building toward Forward Deployed AI Engineering: translating complex business problems into reliable, observable and scalable AI systems.
+Estou construindo em direção a Forward Deployed AI Engineering: traduzir problemas de negócio complexos em sistemas de IA confiáveis, observáveis e escaláveis.
