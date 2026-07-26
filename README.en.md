@@ -2,71 +2,35 @@
 
 *[Versão em português](README.md)*
 
-AI Engineer focused on production-grade LLM applications, agentic systems, RAG pipelines and evaluation-driven AI platforms.
+AI Engineer focused on production LLM applications, agentic systems, RAG
+pipelines and evaluation-driven AI platforms.
 
-I build practical AI systems that connect business problems to reliable software: APIs, agent workflows, retrieval pipelines, evaluation layers, observability, deployment and operational guardrails.
+I turn business problems into reliable software: APIs, agent workflows,
+retrieval, evaluation, observability, deployment and operational guardrails.
 
 ## Selected Work
 
 | Project | What it demonstrates | Evidence |
 |---|---|---|
-| [Forgehand](https://github.com/lucianoon/forgehand) | Reliable multi-agent software delivery | Parallel execution, objective judge, human gates, durable state and tracing |
-| [AutoDiag](https://github.com/lucianoon/autodiag) | A Python product for a real hardware domain | [PyPI](https://pypi.org/project/autodiag/), hardware-free demo, 67 tests, CLI and web UI |
+| [AutoDiag](https://github.com/lucianoon/autodiag) | A Python product for a real hardware domain | [PyPI](https://pypi.org/project/autodiag/), hardware-free demo, 89 tests, CLI and web UI |
+| [Forgehand](https://github.com/lucianoon/forgehand) | Reliable multi-agent software delivery | 95 tests, parallel execution, objective judge, human gates, durable state and tracing |
 | [Enterprise RAG](https://github.com/lucianoon/enterprise-rag-system) | Measured retrieval quality | Hybrid retrieval, reranking, citations, Recall@K and MRR |
-| [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | Reproducible applied-ML experimentation | Rank ablation, saved ROUGE results, CI, Docker and [live demo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo) |
-| [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | Resilient AI applied to public-health data | DATASUS ingestion, resumable jobs, guardrails and an example report |
-| [NovaForge](https://github.com/lucianoon/novaforge) | Full-stack product engineering | React, TypeScript, Express, PostgreSQL and automated tests |
+| [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | Resilient AI applied to public-health data | 89 tests, DATASUS ingestion, resumable jobs, guardrails and an [example report](https://github.com/lucianoon/srag-health-monitor/blob/main/docs/exemplo/relatorio_exemplo.md) |
+| [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | Reproducible applied-ML experimentation | Rank ablation, ROUGE-L 0.357, CI, Docker and [live demo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo) |
+| [Logistics Optimization System](https://github.com/lucianoon/sistema-otimizacao-logistica) | Optimization applied to a Brazilian problem | OR-Tools, CVRP, algorithm comparison, tests and Streamlit UI |
 
-## Core Skills
+## Engineering Evidence
 
-Every item below is exercised by code in the repositories on this profile.
+- **Quality:** pytest, ruff, mypy and GitHub Actions
+- **Production:** Docker, queues/workers, health checks, retries and durable execution
+- **Evaluation:** Recall@K, MRR, ROUGE, groundedness and versioned datasets
+- **Observability:** OpenTelemetry, Langfuse, Prometheus, cost and latency
+- **Data:** PostgreSQL, Qdrant, Neo4j and SQLite
+- **ML/LLM:** PyTorch, Transformers, PEFT/LoRA, RAG, tool calling and JSON Schema
 
-- Python, FastAPI, Pydantic, asyncio
-- LangGraph, LangChain, CrewAI
-- RAG, agents, tool calling, structured output with JSON Schema
-- PostgreSQL, Qdrant, Neo4j, SQLite
-- PyTorch, Transformers, PEFT/LoRA, ONNX
-- Docker, Docker Compose, GitHub Actions, ruff, mypy, pytest
-- OpenTelemetry, Langfuse, Prometheus metrics
-- Evaluation, guardrails, audit logging, cost and latency monitoring
-- TypeScript, React, Vite (secondary)
+## Focus
 
-## System Details
+**Forward Deployed AI Engineering:** translating complex business problems
+into reliable, observable and measurable AI systems.
 
-### [Forgehand](https://github.com/lucianoon/forgehand)
-
-Multi-agent software delivery system on LangGraph: parallel task fan-out with merge-by-id reducers, incremental LLM-judge with objective veto (pytest/ruff/mypy signals), human approval gates, token/cost budget circuit breakers, durable execution with Postgres checkpoints, OTel/Langfuse tracing and a mission-control dashboard.
-
-### [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system)
-
-**Single-shot retrieval, optimized for measurable answer quality.** Hybrid BM25 + vector score fusion, heuristic reranking (title and exact-phrase overlap), grounded citations, per-stage score transparency and a Recall@K / MRR evaluation endpoint over a versioned labeled dataset. Pluggable embedders (hashing → TF-IDF → sentence-transformers) and vector stores (in-memory → Qdrant), so the whole pipeline runs offline in CI and swaps to production backends by environment variable. Built so retrieval quality is measured, not assumed.
-
-### [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system)
-
-**Multi-step agent loop over retrieval, for questions one query cannot answer.** Where the Enterprise RAG engine retrieves once and answers, this one runs a Claude tool-use loop (`search_documents`, `get_task_history`): the agent decides when to search, refines the query and searches again when the first results fall short, and iterates under a bounded step cap. Answers are then scored for groundedness against the evidence the tools actually returned — a deterministic lexical proxy, not semantic entailment — and flagged when they drift. Conversational memory, a scripted offline model so the full loop is testable without API keys, and a CLI for corpus ingestion.
-
-### [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor)
-
-Public-health reporting system (DATASUS/SIVEP-Gripe) with a multi-agent pipeline coordinated by a blackboard: steps declare preconditions over shared state instead of calling each other, run in parallel when ready, and persist progress per step. Failed jobs resume from the exact point of failure via a retry API endpoint. FastAPI, async worker, audit guardrails, Docker.
-
-### [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm)
-
-Parameter-efficient fine-tuning of T5 with LoRA (rank ablation, ROUGE evaluation, tests, CI, Docker) — with a **[live demo that runs entirely in your browser](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo)** (adapter merged, exported to ONNX, INT8-quantized, served via Transformers.js).
-
-### [AutoDiag](https://github.com/lucianoon/autodiag)
-
-Universal OBD2 diagnostics for 2015+ vehicles, **[published on PyPI](https://pypi.org/project/autodiag/)** (`pip install autodiag`): DTC reading and SAE J2012 decoding, live PIDs, local + NHTSA VIN lookup, urgency heuristics, streaming AI explanations and SQLite history — CLI and FastAPI web UI, cross-platform port autodetection, a hardware-free demo mode (`autodiag scan --demo`), 67 unit tests, ruff + mypy in CI.
-
-### [Multi-Agent Recruiters](https://github.com/lucianoon/multi-agents-recrutadores)
-
-CrewAI pipeline that turns hiring inputs into a polished job description through three specialized agents (researcher, writer, reviewer) chained across five sequential tasks — with a structural test suite that validates agent/task wiring without calling LLMs.
-
-### [NovaForge](https://github.com/lucianoon/novaforge)
-
-Fullstack technology consulting platform built with TypeScript, React, Vite and Tailwind CSS.
-
-Every project above ships with an MIT license and GitHub Actions CI.
-
-## Positioning
-
-I am building toward Forward Deployed AI Engineering: translating complex business problems into reliable, observable and scalable AI systems.
+[LinkedIn](https://www.linkedin.com/in/luciano-oliveira-nunes/)
