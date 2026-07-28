@@ -28,7 +28,8 @@ per-stage scores — you can see *why* a chunk was retrieved, not just *that*
 it was.
 
 > 55 offline tests, a labeled and versioned dataset, and the same code from the
-> in-memory backend to Qdrant.
+> in-memory backend to Qdrant. **[Live demo](https://enterprise-rag-demo.onrender.com/docs)**
+> — try `/query` and `/evaluate/batch` in the browser.
 
 ### 🏥 [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) — AI applied to a real public-data domain
 

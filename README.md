@@ -28,7 +28,8 @@ resposta expõe os scores de cada estágio — dá para ver *por que* um trecho 
 recuperado, não apenas *que* ele foi.
 
 > 55 testes offline, dataset rotulado e versionado, mesmo código do backend em
-> memória ao Qdrant.
+> memória ao Qdrant. **[Demo ao vivo](https://enterprise-rag-demo.onrender.com/docs)**
+> — experimente o `/query` e o `/evaluate/batch` no navegador.
 
 ### 🏥 [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) — IA aplicada a um domínio público real
 
