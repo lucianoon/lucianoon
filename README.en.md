@@ -48,6 +48,7 @@ guardrails.
 | [AutoDiag](https://github.com/lucianoon/autodiag) | OBD2 diagnostics **[published on PyPI](https://pypi.org/project/autodiag/)** — 89 tests, full hardware-free demo, CLI + web |
 | [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | T5 fine-tuning with LoRA — rank ablation, ROUGE-L 0.357 and a **[live demo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo)** on Hugging Face |
 | [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | Tool-use loop with Claude over retrieval — multi-step reasoning, complementary to Enterprise RAG |
+| [TechScout AI](https://github.com/lucianoon/techscout-ai) | GraphRAG: an LLM extracts triples into a NetworkX graph, combined with vector search — for relational questions no single passage answers. 126 tests, 82% branch coverage, no measured retrieval baseline (stated in the README) |
 | [Logistics Optimization System](https://github.com/lucianoon/sistema-otimizacao-logistica) | OR-Tools, CVRP with Brazilian logistics constraints, algorithm comparison and a Streamlit UI |
 
 ## How I work
