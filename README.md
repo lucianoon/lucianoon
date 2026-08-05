@@ -48,7 +48,7 @@ guardrails.
 | [AutoDiag](https://github.com/lucianoon/autodiag) | Diagnóstico OBD2 **[publicado no PyPI](https://pypi.org/project/autodiag/)** — 89 testes, demo completa sem hardware, CLI + web |
 | [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | Fine-tuning T5 com LoRA — ablação de rank, ROUGE-L 0,357 e **[demo ao vivo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo)** no Hugging Face |
 | [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | Loop de tool use com Claude sobre recuperação — raciocínio multi-passo, complementar ao Enterprise RAG |
-| [TechScout AI](https://github.com/lucianoon/techscout-ai) | GraphRAG: um LLM extrai triplas para um grafo NetworkX, combinado com busca vetorial — para perguntas relacionais que nenhum trecho isolado responde. 126 testes, 82% de branch coverage, sem baseline de recuperação medido (declarado no README) |
+| [TechScout AI](https://github.com/lucianoon/techscout-ai) | GraphRAG para perguntas relacionais que nenhum trecho isolado responde — **Recall@K e MRR medidos** sobre dataset rotulado, comparando grafo, BM25 e a fusão dos dois. 171 testes, 83% de branch coverage, baseline reexecutado a cada push |
 | [Sistema de Otimização Logística](https://github.com/lucianoon/sistema-otimizacao-logistica) | OR-Tools, CVRP com restrições logísticas do Brasil, comparação de algoritmos e interface Streamlit |
 
 ## Como eu trabalho
