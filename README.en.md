@@ -38,15 +38,6 @@ guardrails.
 - **Operations:** API and worker through Docker Compose
 - **Evidence:** [versioned example report](https://github.com/lucianoon/srag-health-monitor/blob/main/docs/exemplo/relatorio_exemplo.md)
 
-### 🛒 [E-commerce Sales Agent](https://github.com/lucianoon/ecommerce-sales-agent) — business-oriented AI
-
-A multi-tenant sales assistant covering recommendations, carts, Pix payments,
-abandonment recovery and human handoff.
-
-- **Integrations:** Nuvemshop, WhatsApp Business and Mercado Pago
-- **Reliability:** PostgreSQL, deterministic fallback and CI
-- **Product:** operator dashboard plus conversion and assisted-revenue metrics
-
 ## Demonstrated specializations
 
 | Area | Project | Evidence |

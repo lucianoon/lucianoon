@@ -38,15 +38,6 @@ de PII e guardrails.
 - **Operação:** API e worker em Docker Compose
 - **Evidência:** [relatório de exemplo](https://github.com/lucianoon/srag-health-monitor/blob/main/docs/exemplo/relatorio_exemplo.md)
 
-### 🛒 [E-commerce Sales Agent](https://github.com/lucianoon/ecommerce-sales-agent) — IA orientada a negócio
-
-Assistente de vendas multi-tenant com recomendação, carrinho, Pix, recuperação
-de abandono e handoff humano.
-
-- **Integrações:** Nuvemshop, WhatsApp Business e Mercado Pago
-- **Confiabilidade:** PostgreSQL, fallback determinístico e CI
-- **Produto:** painel operacional e métricas de conversão e receita assistida
-
 ## Especializações demonstradas
 
 | Área | Projeto | Evidência |
