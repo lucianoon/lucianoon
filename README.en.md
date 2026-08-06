@@ -2,66 +2,73 @@
 
 *[Versão em português](README.md)*
 
-**Production-focused AI Engineer** — agentic systems, RAG and
-evaluation-driven platforms. Every project below has tests, CI, published
-metrics and a way for you to verify the claims without taking my word for it.
+**Production-focused AI Engineer** — I build agentic systems, RAG platforms and
+evaluation-driven AI products. My main projects combine reproducible metrics,
+automated tests, CI and artifacts that make their results independently
+verifiable.
 
-## Three projects that sum up my work
+## Flagship projects
 
-### 🔨 [Forgehand](https://github.com/lucianoon/forgehand) — agents with production guarantees
+### 🔨 [Forgehand](https://github.com/lucianoon/forgehand) — agent engineering
 
-Multi-agent software delivery system: LangGraph orchestration, parallel
-fan-out, LLM judge with objective veto (`pytest`, `ruff` and `mypy` can reject
-a delivery even when the judge approves), human gates and durable execution
-with PostgreSQL checkpoints.
+A multi-agent software delivery system with LangGraph, parallel fan-out,
+objective vetoes around the LLM judge, human gates, persistent memory and
+durable execution on PostgreSQL.
 
-> **Measured pilot:** 88.9% completion across 9 real workflows, average cost of
-> US$ 0.003 per workflow and p95 latency of 41.6 s — methodology and failure
-> diagnosis in the [pilot report](https://github.com/lucianoon/forgehand/blob/main/docs/pilot-report-2026-07-20.md).
-> 95 test functions, CI with PostgreSQL 16 and Neo4j 5.
+- **Pilot:** 88.9% completion across 9 workflows, US$0.003 per workflow and 41.6 s p95
+- **Engineering:** 95 test functions; CI with PostgreSQL 16 and Neo4j 5
+- **Evidence:** [pilot methodology and failure analysis](https://github.com/lucianoon/forgehand/blob/main/docs/pilot-report-2026-07-20.md)
 
-### 🔎 [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) — retrieval you can measure
+### 🔎 [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) — measurable retrieval
 
-Hybrid RAG (BM25 + vector) with score fusion, reranking, cited answers and
-**Recall@K / MRR as a first-class API endpoint**. Every response exposes
-per-stage scores — you can see *why* a chunk was retrieved, not just *that*
-it was.
+Hybrid RAG with lexical and vector retrieval, score fusion, reranking,
+citations and retrieval evaluation built into the API.
 
-> 55 offline tests, a labeled and versioned dataset, and the same code from the
-> in-memory backend to Qdrant. **[Live demo](https://enterprise-rag-demo.onrender.com/docs)**
-> — try `/query` and `/evaluate/batch` in the browser.
+- **Metrics:** Recall@K and MRR on a labeled, versioned dataset
+- **Transparency:** per-stage scores exposed in every response
+- **Demo:** [interactive API](https://enterprise-rag-demo.onrender.com/docs)
 
-### 🏥 [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) — AI applied to a real public-data domain
+### 🏥 [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) — AI for public health
 
-Epidemiological reports from Brazilian DATASUS/SIVEP-Gripe data: FastAPI,
-async worker, per-step resumable jobs, auditing, PII anonymization and
+Auditable epidemiological reports from Brazilian DATASUS/SIVEP-Gripe data,
+with an API, asynchronous worker, resumable jobs, PII anonymization and
 guardrails.
 
-> 89 offline tests, Docker Compose, and an
-> [example report](https://github.com/lucianoon/srag-health-monitor/blob/main/docs/exemplo/relatorio_exemplo.md)
-> versioned in the repository — the output is verifiable before installing anything.
+- **Quality:** 89 offline tests
+- **Operations:** API and worker through Docker Compose
+- **Evidence:** [versioned example report](https://github.com/lucianoon/srag-health-monitor/blob/main/docs/exemplo/relatorio_exemplo.md)
 
-## Other projects
+### 🛒 [E-commerce Sales Agent](https://github.com/lucianoon/ecommerce-sales-agent) — business-oriented AI
 
-| Project | Evidence |
-|---|---|
-| [AutoDiag](https://github.com/lucianoon/autodiag) | OBD2 diagnostics **[published on PyPI](https://pypi.org/project/autodiag/)** — 89 tests, full hardware-free demo, CLI + web |
-| [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | T5 fine-tuning with LoRA — rank ablation, ROUGE-L 0.357 and a **[live demo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo)** on Hugging Face |
-| [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | Tool-use loop with Claude over retrieval — multi-step reasoning, complementary to Enterprise RAG |
-| [TechScout AI](https://github.com/lucianoon/techscout-ai) | GraphRAG for relational questions no single passage answers — **measured Recall@K and MRR** on a labelled dataset, comparing graph, BM25 and their fusion. 171 tests, 83% branch coverage, baseline re-run on every push |
-| [Logistics Optimization System](https://github.com/lucianoon/sistema-otimizacao-logistica) | OR-Tools, CVRP with Brazilian logistics constraints, algorithm comparison and a Streamlit UI |
+A multi-tenant sales assistant covering recommendations, carts, Pix payments,
+abandonment recovery and human handoff.
 
-## How I work
+- **Integrations:** Nuvemshop, WhatsApp Business and Mercado Pago
+- **Reliability:** PostgreSQL, deterministic fallback and CI
+- **Product:** operator dashboard plus conversion and assisted-revenue metrics
 
-- **Evaluation first:** Recall@K, MRR, ROUGE, groundedness and versioned datasets — if you can't measure it, you can't improve it
-- **Production, not demos:** Docker, queues/workers, health checks, retries, circuit breakers and durable execution
-- **Observability:** OpenTelemetry, Langfuse, Prometheus, with cost and latency tracked per run
-- **Automated quality:** pytest, ruff, mypy and GitHub Actions across all projects
-- **Stack:** Python, FastAPI, PyTorch, Transformers, PEFT/LoRA, LangGraph, PostgreSQL, Qdrant, Neo4j
+## Demonstrated specializations
 
-## Focus
+| Area | Project | Evidence |
+|---|---|---|
+| Fine-tuning | [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | T5 + LoRA, rank ablation, ROUGE-L and a [Hugging Face demo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo) |
+| GraphRAG | [TechScout AI](https://github.com/lucianoon/techscout-ai) | Knowledge graph + textual/vector retrieval, evaluation and published coverage |
+| Edge/automotive | [AutoDiag](https://github.com/lucianoon/autodiag) | OBD2 diagnostics, CLI/web and a [PyPI package](https://pypi.org/project/autodiag/) |
+| Optimization | [Logistics Optimization System](https://github.com/lucianoon/sistema-otimizacao-logistica) | OR-Tools, CVRP, cost analysis and a Streamlit UI |
+| Agentic RAG | [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | Iterative tool-use retrieval with query reformulation |
 
-**Forward Deployed AI Engineering:** translating complex business problems
-into reliable, observable and measurable AI systems.
+## Engineering principles
 
-📫 [LinkedIn](https://www.linkedin.com/in/luciano-oliveira-nunes/)
+- **Evaluation before claims:** Recall@K, MRR, ROUGE, versioned datasets and baselines
+- **Graceful degradation:** simulated backends and deterministic paths when external models fail
+- **Verifiable production work:** tests, CI, Docker, health checks, retries and durable execution
+- **Observability:** cost, latency, failures and decisions tracked per run
+- **Core stack:** Python, FastAPI, PyTorch, Transformers, LangGraph, PostgreSQL, Qdrant and Neo4j
+
+## Professional focus
+
+**Forward Deployed AI Engineering:** turning business problems into reliable,
+observable and measurable AI systems.
+
+[LinkedIn](https://www.linkedin.com/in/luciano-oliveira-nunes/) ·
+[GitHub](https://github.com/lucianoon)
