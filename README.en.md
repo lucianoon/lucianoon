@@ -55,7 +55,7 @@ projects and commercial positioning.
 |---|---|---|
 | Healthcare AI | [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | Auditable epidemiological reporting with API, async worker and guardrails |
 | Fine-tuning | [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | T5 + LoRA, rank ablation, ROUGE-L and a [Hugging Face demo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo) |
-| GraphRAG | [TechScout AI](https://github.com/lucianoon/techscout-ai) | Knowledge graph + textual/vector retrieval, evaluation and published coverage |
+| GraphRAG | [TechScout AI](https://github.com/lucianoon/techscout-ai) | Knowledge graph + textual/vector retrieval, evaluation, published coverage and a [live demo](https://techscout-demo.onrender.com) |
 | Edge/automotive | [AutoDiag](https://github.com/lucianoon/autodiag) | OBD2 diagnostics, CLI/web and a [PyPI package](https://pypi.org/project/autodiag/) |
 | Optimization | [Logistics Optimization System](https://github.com/lucianoon/sistema-otimizacao-logistica) | OR-Tools, CVRP, cost analysis and a Streamlit UI |
 | Agentic RAG | [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | Iterative tool-use retrieval with query reformulation |
