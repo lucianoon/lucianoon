@@ -1,6 +1,6 @@
 # Luciano de Oliveira Nunes
 
-*[Versao em portugues](README.md)*
+*[Versão em português](README.md)*
 
 **Production-focused AI Engineer** - I build agentic systems, RAG platforms and
 evaluation-driven AI products. My projects combine reproducible metrics,
@@ -17,6 +17,7 @@ workers and tools for search, browser automation and code execution.
 
 - **Scope:** product-oriented execution of complex tasks with real-time feedback
 - **Engineering:** Docker Compose, Redis, Playwright, SearXNG and clear separation between orchestrator and executor
+- **Verification:** 30 unit tests plus 4 integration tests running a real Redis broker and Celery worker in CI
 - **Positioning:** my strongest agent-platform style project so far
 
 ### 🔎 [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) - measurable retrieval
@@ -44,6 +45,7 @@ A Django-based website to present AI services, automation offerings, web
 projects and commercial positioning.
 
 - **Stack:** Django, server-side templates, Docker and deployment-ready structure
+- **Verification:** smoke tests for every page and the contact endpoint in CI
 - **Use:** commercial front door for services, case studies and lead capture
 - **Portfolio role:** fullstack complement to the technical AI systems
 
