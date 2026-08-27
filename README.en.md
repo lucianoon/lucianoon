@@ -27,6 +27,10 @@ citations and retrieval evaluation built into the API.
 - **Metrics:** Recall@K and MRR on a labeled, versioned dataset
 - **Transparency:** per-stage scores exposed in every response
 - **Demo:** [interactive API](https://enterprise-rag-demo.onrender.com/docs)
+- **Sibling tracks:** single-pass measurable retrieval here; iterative tool use in
+  [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system); a knowledge
+  graph in [TechScout AI](https://github.com/lucianoon/techscout-ai) — three distinct
+  retrieval problems, not three versions of the same project
 
 ### 🌐 [Pulse Site](https://github.com/lucianoon/pulse-site) - institutional fullstack presence
 

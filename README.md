@@ -27,6 +27,10 @@ e avaliação de recuperação como parte da própria API.
 - **Métricas:** Recall@K e MRR sobre dataset rotulado e versionado
 - **Transparência:** scores de cada estágio expostos na resposta
 - **Demo:** [API interativa](https://enterprise-rag-demo.onrender.com/docs)
+- **Trilhas irmãs:** recuperação única e mensurável aqui; tool use iterativo no
+  [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system); grafo de
+  conhecimento no [TechScout AI](https://github.com/lucianoon/techscout-ai) — três
+  problemas de recuperação distintos, não três versões do mesmo projeto
 
 ### 🌐 [Pulse Site](https://github.com/lucianoon/pulse-site) - presença institucional e fullstack
 
