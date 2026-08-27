@@ -9,26 +9,6 @@ resultados.
 
 ## Projetos principais
 
-### 🤖 [Orbit AI Orchestrator](https://github.com/lucianoon/orbit-ai-orchestrator) - orquestração de tarefas com IA
-
-Plataforma de automação com arquitetura Plan-Execute-Verify, frontend web,
-WebSocket em tempo real, orquestrador FastAPI, workers Celery e ferramentas de
-busca, browser e execução de código.
-
-- **Escopo:** produto orientado à execução de tarefas complexas com feedback em tempo real
-- **Engenharia:** Docker Compose, Redis, Playwright, SearXNG e separação clara entre orquestrador e executor
-- **Verificação:** 30 testes unitários + 4 de integração com Redis e worker Celery reais no CI
-- **Posicionamento:** meu projeto mais próximo de uma plataforma de agentes pronta para produto
-
-### 🔎 [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) - recuperação mensurável
-
-RAG híbrido com busca lexical e vetorial, fusão de scores, reranking, citações
-e avaliação de recuperação como parte da própria API.
-
-- **Métricas:** Recall@K e MRR sobre dataset rotulado e versionado
-- **Transparência:** scores de cada estágio expostos na resposta
-- **Demo:** [API interativa](https://enterprise-rag-demo.onrender.com/docs)
-
 ### 🔨 [Forgehand](https://github.com/lucianoon/forgehand) - engenharia de agentes
 
 Sistema multiagente para entrega de software com LangGraph, fan-out paralelo,
@@ -38,6 +18,15 @@ durável em PostgreSQL.
 - **Piloto:** 88,9% de conclusão em 9 workflows, US$ 0,003 por workflow e p95 de 41,6 s
 - **Engenharia:** 95 funções de teste; CI com PostgreSQL 16 e Neo4j 5
 - **Evidência:** [metodologia e diagnóstico do piloto](https://github.com/lucianoon/forgehand/blob/main/docs/pilot-report-2026-07-20.md)
+
+### 🔎 [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) - recuperação mensurável
+
+RAG híbrido com busca lexical e vetorial, fusão de scores, reranking, citações
+e avaliação de recuperação como parte da própria API.
+
+- **Métricas:** Recall@K e MRR sobre dataset rotulado e versionado
+- **Transparência:** scores de cada estágio expostos na resposta
+- **Demo:** [API interativa](https://enterprise-rag-demo.onrender.com/docs)
 
 ### 🌐 [Pulse Site](https://github.com/lucianoon/pulse-site) - presença institucional e fullstack
 

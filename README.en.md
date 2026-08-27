@@ -9,26 +9,6 @@ verifiable.
 
 ## Flagship projects
 
-### 🤖 [Orbit AI Orchestrator](https://github.com/lucianoon/orbit-ai-orchestrator) - AI task orchestration
-
-An automation platform built around a Plan-Execute-Verify architecture, with a
-web frontend, real-time WebSocket updates, a FastAPI orchestrator, Celery
-workers and tools for search, browser automation and code execution.
-
-- **Scope:** product-oriented execution of complex tasks with real-time feedback
-- **Engineering:** Docker Compose, Redis, Playwright, SearXNG and clear separation between orchestrator and executor
-- **Verification:** 30 unit tests plus 4 integration tests running a real Redis broker and Celery worker in CI
-- **Positioning:** my strongest agent-platform style project so far
-
-### 🔎 [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) - measurable retrieval
-
-Hybrid RAG with lexical and vector retrieval, score fusion, reranking,
-citations and retrieval evaluation built into the API.
-
-- **Metrics:** Recall@K and MRR on a labeled, versioned dataset
-- **Transparency:** per-stage scores exposed in every response
-- **Demo:** [interactive API](https://enterprise-rag-demo.onrender.com/docs)
-
 ### 🔨 [Forgehand](https://github.com/lucianoon/forgehand) - agent engineering
 
 A multi-agent software delivery system with LangGraph, parallel fan-out,
@@ -38,6 +18,15 @@ durable execution on PostgreSQL.
 - **Pilot:** 88.9% completion across 9 workflows, US$0.003 per workflow and 41.6 s p95
 - **Engineering:** 95 test functions; CI with PostgreSQL 16 and Neo4j 5
 - **Evidence:** [pilot methodology and failure analysis](https://github.com/lucianoon/forgehand/blob/main/docs/pilot-report-2026-07-20.md)
+
+### 🔎 [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) - measurable retrieval
+
+Hybrid RAG with lexical and vector retrieval, score fusion, reranking,
+citations and retrieval evaluation built into the API.
+
+- **Metrics:** Recall@K and MRR on a labeled, versioned dataset
+- **Transparency:** per-stage scores exposed in every response
+- **Demo:** [interactive API](https://enterprise-rag-demo.onrender.com/docs)
 
 ### 🌐 [Pulse Site](https://github.com/lucianoon/pulse-site) - institutional fullstack presence
 
