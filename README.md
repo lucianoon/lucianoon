@@ -56,26 +56,24 @@ atendimento, páginas web e presença comercial.
 
 ## Estado do portfólio
 
-Autoavaliação de 01/09/2026, refeita após uma rodada de manutenção. Critérios:
-cobertura de testes e CI, documentação (README bilíngue, CHANGELOG, SECURITY),
-reprodutibilidade (Docker, lockfile), evidências externas (demo, PyPI, registry)
-e maturidade do histórico. A contagem de testes é de funções de teste na `main`.
+Levantamento de 01/09/2026. A contagem é de funções de teste na `main`; a
+última coluna aponta a evidência externa mais forte de cada projeto.
 
-| Repositório | Nota | Testes | Evidência externa |
-|---|---:|---:|---|
-| [Forgehand](https://github.com/lucianoon/forgehand) | 9,0 | 95 | Piloto medido; CI com PostgreSQL e Neo4j |
-| [AutoDiag](https://github.com/lucianoon/autodiag) | 9,0 | 283 | [Pacote no PyPI](https://pypi.org/project/autodiag/), release automatizado |
-| [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) | 8,5 | 55 | [Demo ao vivo](https://enterprise-rag-demo.onrender.com/docs), Recall@K e MRR na API |
-| [TechScout AI](https://github.com/lucianoon/techscout-ai) | 8,5 | 185 | [Demo ao vivo](https://techscout-demo.onrender.com), GraphRAG com Neo4j e Qdrant |
-| [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | 8,5 | 89 | Relatório de exemplo auditável; CodeQL no CI |
-| [mcp-dados-br](https://github.com/lucianoon/mcp-dados-br) | 8,5 | 61 | [PyPI](https://pypi.org/project/mcp-dados-br/), MCP Registry e Smithery; 19 tools de dados públicos |
-| [llm-course](https://github.com/lucianoon/llm-course) | 8,0 | 39 | 19 módulos com laboratórios reproduzíveis e portão de avaliação no CI |
-| [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | 8,0 | 37 | [Demo no Hugging Face](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo), ablação de rank |
-| [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | 8,0 | 72 | Loop de tool use com modelo determinístico offline |
-| [vigia-licitacoes](https://github.com/lucianoon/vigia-licitacoes) | 7,5 | 59 | Monitor do PNCP com regras YAML e alertas no Telegram |
-| [Sistema de Otimização Logística](https://github.com/lucianoon/sistema-otimizacao-logistica) | 7,5 | 55 | OR-Tools, CVRP e Streamlit |
-| [Pulse Site](https://github.com/lucianoon/pulse-site) | 6,5 | 6 | `check --deploy` sem avisos e smoke do gunicorn no CI |
-| [multi-agents-recrutadores](https://github.com/lucianoon/multi-agents-recrutadores) | 6,5 | 28 | Demonstração de orquestração multiagente |
+| Repositório | Testes | Evidência externa |
+|---|---:|---|
+| [Forgehand](https://github.com/lucianoon/forgehand) | 95 | Piloto medido; CI com PostgreSQL e Neo4j |
+| [AutoDiag](https://github.com/lucianoon/autodiag) | 283 | [Pacote no PyPI](https://pypi.org/project/autodiag/), release automatizado |
+| [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) | 55 | [Demo ao vivo](https://enterprise-rag-demo.onrender.com/docs), Recall@K e MRR na API |
+| [TechScout AI](https://github.com/lucianoon/techscout-ai) | 185 | [Demo ao vivo](https://techscout-demo.onrender.com), GraphRAG com Neo4j e Qdrant |
+| [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | 89 | Relatório de exemplo auditável; CodeQL no CI |
+| [mcp-dados-br](https://github.com/lucianoon/mcp-dados-br) | 61 | [PyPI](https://pypi.org/project/mcp-dados-br/), MCP Registry e Smithery; 19 tools de dados públicos |
+| [llm-course](https://github.com/lucianoon/llm-course) | 39 | 19 módulos com laboratórios reproduzíveis e portão de avaliação no CI |
+| [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | 37 | [Demo no Hugging Face](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo), ablação de rank |
+| [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | 72 | Loop de tool use com modelo determinístico offline |
+| [vigia-licitacoes](https://github.com/lucianoon/vigia-licitacoes) | 59 | Monitor do PNCP com regras YAML e alertas no Telegram |
+| [Sistema de Otimização Logística](https://github.com/lucianoon/sistema-otimizacao-logistica) | 55 | OR-Tools, CVRP e Streamlit |
+| [Pulse Site](https://github.com/lucianoon/pulse-site) | 6 | `check --deploy` sem avisos e smoke do gunicorn no CI |
+| [multi-agents-recrutadores](https://github.com/lucianoon/multi-agents-recrutadores) | 28 | Demonstração de orquestração multiagente |
 
 Todos os repositórios ativos têm CI verde, licença, topics e Docker. Repositórios
 arquivados (orbit-ai-orchestrator, novaforge, fde-ai-platform) ficam fora da
