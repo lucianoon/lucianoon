@@ -54,6 +54,33 @@ projects and commercial positioning.
 | Agentic RAG | [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | Iterative tool-use retrieval with query reformulation |
 | Vertical multi-agent systems | [multi-agents-recrutadores](https://github.com/lucianoon/multi-agents-recrutadores) | Multi-agent workflow applied to recruiting and operational automation |
 
+## Portfolio status
+
+Self-assessment as of 2026-09-01, redone after a maintenance round. Criteria:
+test coverage and CI, documentation (bilingual README, CHANGELOG, SECURITY),
+reproducibility (Docker, lockfile), external evidence (demo, PyPI, registry)
+and history maturity. Test counts are test functions on `main`.
+
+| Repository | Grade | Tests | External evidence |
+|---|---:|---:|---|
+| [Forgehand](https://github.com/lucianoon/forgehand) | 9.0 | 95 | Measured pilot; CI with PostgreSQL and Neo4j |
+| [AutoDiag](https://github.com/lucianoon/autodiag) | 9.0 | 283 | [PyPI package](https://pypi.org/project/autodiag/), automated releases |
+| [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) | 8.5 | 55 | [Live demo](https://enterprise-rag-demo.onrender.com/docs), Recall@K and MRR in the API |
+| [TechScout AI](https://github.com/lucianoon/techscout-ai) | 8.5 | 185 | [Live demo](https://techscout-demo.onrender.com), GraphRAG with Neo4j and Qdrant |
+| [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | 8.5 | 89 | Auditable sample report; CodeQL in CI |
+| [mcp-dados-br](https://github.com/lucianoon/mcp-dados-br) | 8.5 | 61 | [PyPI](https://pypi.org/project/mcp-dados-br/), MCP Registry and Smithery; 19 Brazilian public-data tools |
+| [llm-course](https://github.com/lucianoon/llm-course) | 8.0 | 39 | 19 modules with reproducible labs and an evaluation gate in CI |
+| [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | 8.0 | 37 | [Hugging Face demo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo), rank ablation |
+| [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | 8.0 | 72 | Tool-use loop with a deterministic offline model |
+| [vigia-licitacoes](https://github.com/lucianoon/vigia-licitacoes) | 7.5 | 59 | PNCP public-tender monitor with YAML rules and Telegram alerts |
+| [Logistics Optimization System](https://github.com/lucianoon/sistema-otimizacao-logistica) | 7.5 | 55 | OR-Tools, CVRP and Streamlit |
+| [Pulse Site](https://github.com/lucianoon/pulse-site) | 6.5 | 6 | Clean `check --deploy` and a gunicorn smoke test in CI |
+| [multi-agents-recrutadores](https://github.com/lucianoon/multi-agents-recrutadores) | 6.5 | 28 | Multi-agent orchestration demo |
+
+Every active repository has green CI, a license, topics and Docker. Archived
+repositories (orbit-ai-orchestrator, novaforge, fde-ai-platform) are deliberately
+left out of the table.
+
 ## Engineering principles
 
 - **Evaluation before claims:** Recall@K, MRR, ROUGE, versioned datasets and baselines
