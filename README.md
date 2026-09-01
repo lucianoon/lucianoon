@@ -53,6 +53,8 @@ atendimento, páginas web e presença comercial.
 | Otimização | [Sistema de Otimização Logística](https://github.com/lucianoon/sistema-otimizacao-logistica) | OR-Tools, CVRP, análise de custos e interface Streamlit |
 | RAG agêntico | [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | Recuperação iterativa com tool use e reformulação de consultas |
 | Multiagentes verticais | [multi-agents-recrutadores](https://github.com/lucianoon/multi-agents-recrutadores) | Aplicação de agentes em recrutamento e automação de fluxo específico |
+| Dados públicos para LLMs | [mcp-dados-br](https://github.com/lucianoon/mcp-dados-br) | Servidor MCP com 19 tools sobre IBGE, Banco Central, INMET, Câmara e Senado; [PyPI](https://pypi.org/project/mcp-dados-br/), MCP Registry e Smithery |
+| Automação GovTech | [vigia-licitacoes](https://github.com/lucianoon/vigia-licitacoes) | Monitor de licitações do PNCP com regras YAML, resumo por LLM, dedup em SQLite e alertas no Telegram |
 
 ## Estado do portfólio
 
