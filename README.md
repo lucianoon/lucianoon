@@ -2,92 +2,63 @@
 
 *[English version](README.en.md)*
 
-**Engenheiro de IA focado em produção** — construo sistemas agênticos, RAG e
-produtos de IA orientados por avaliação. Meus projetos combinam métricas
-reproduzíveis, testes automatizados, CI e artefatos que permitem verificar os
-resultados.
+**Engenheiro de IA focado em produção.** Construo sistemas que continuam
+mensuráveis e verificáveis quando o LLM falha: agentes, RAG, avaliação,
+observabilidade e produtos de IA aplicados a problemas reais.
 
-## Projetos principais
+Minha stack principal é Python, FastAPI, LangGraph, PyTorch, PostgreSQL,
+Qdrant e Neo4j.
 
-### 🔨 [Forgehand](https://github.com/lucianoon/forgehand) - engenharia de agentes
+## Projetos em destaque
 
-Sistema multiagente para entrega de software com LangGraph, fan-out paralelo,
-judge LLM com veto objetivo, gates humanos, memória persistente e execução
-durável em PostgreSQL.
+### 🔨 [Forgehand](https://github.com/lucianoon/forgehand) — engenharia de agentes
 
-- **Piloto:** 88,9% de conclusão em 9 workflows, US$ 0,003 por workflow e p95 de 41,6 s
-- **Engenharia:** 95 funções de teste; CI com PostgreSQL 16 e Neo4j 5
-- **Evidência:** [metodologia e diagnóstico do piloto](https://github.com/lucianoon/forgehand/blob/main/docs/pilot-report-2026-07-20.md)
+Plataforma multiagente para entrega de software com fan-out paralelo, execução
+durável, gates humanos e um judge LLM subordinado a verificações objetivas como
+`pytest`, `ruff` e `mypy`.
 
-### 🔎 [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) - recuperação mensurável
+- **Operação:** circuit breakers de custo, tempo e tentativas; tracing OTel/Langfuse
+- **Confiabilidade:** checkpoints em PostgreSQL e retomada após interrupções
+- **Evidência:** [piloto reproduzível com metodologia e limitações](https://github.com/lucianoon/forgehand/blob/main/docs/pilot-report-2026-07-20.md)
 
-RAG híbrido com busca lexical e vetorial, fusão de scores, reranking, citações
-e avaliação de recuperação como parte da própria API.
+### 🚗 [AutoDiag](https://github.com/lucianoon/autodiag) — IA em um produto vertical
 
-- **Métricas:** Recall@K e MRR sobre dataset rotulado e versionado
-- **Transparência:** scores de cada estágio expostos na resposta
-- **Demo:** [API interativa](https://enterprise-rag-demo.onrender.com/docs)
-- **Trilhas irmãs:** recuperação única e mensurável aqui; tool use iterativo no
-  [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system); grafo de
-  conhecimento no [TechScout AI](https://github.com/lucianoon/techscout-ai) — três
-  problemas de recuperação distintos, não três versões do mesmo projeto
+Diagnóstico OBD2 para veículos 2015+, distribuído como pacote Python. Combina
+protocolo automotivo, CLI, FastAPI, SSE, SQLite e análise opcional por LLM.
 
-### 🌐 [Pulse Site](https://github.com/lucianoon/pulse-site) - presença institucional e fullstack
+- **Experimente sem hardware:** `pip install autodiag && autodiag scan --demo`
+- **Produto:** leitura de DTCs/PIDs/VIN, histórico e interface web local
+- **Distribuição:** [pacote publicado no PyPI](https://pypi.org/project/autodiag/)
 
-Site institucional em Django para apresentar serviços de IA, automação,
-atendimento, páginas web e presença comercial.
+### 🇧🇷 [mcp-dados-br](https://github.com/lucianoon/mcp-dados-br) — dados públicos para agentes
 
-- **Stack:** Django, templates server-side, Docker e deploy pronto para evolução
-- **Verificação:** testes de fumaça das páginas e do endpoint de contato no CI
-- **Uso:** base comercial para apresentar serviços, casos e captação de clientes
-- **Função no portfólio:** complemento fullstack aos projetos técnicos de IA
+Servidor MCP com ferramentas para consultar IBGE, Banco Central, INMET, Câmara
+dos Deputados e Senado Federal a partir de assistentes de IA.
 
-## Especializações demonstradas
+- **Instalação:** `uvx mcp-dados-br`
+- **Adoção:** publicado no [PyPI](https://pypi.org/project/mcp-dados-br/), MCP Registry e Smithery
+- **Engenharia:** cache, retry, transporte stdio/HTTP, testes offline e Docker
 
-| Área | Projeto | Evidência |
+## Outros trabalhos selecionados
+
+| Área | Projeto | Evidência principal |
 |---|---|---|
-| IA em saúde | [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | Relatórios epidemiológicos auditáveis com API, worker assíncrono e guardrails |
-| Fine-tuning | [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | T5 + LoRA, ablação de rank, ROUGE-L e [demo no Hugging Face](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo) |
-| GraphRAG | [TechScout AI](https://github.com/lucianoon/techscout-ai) | Grafo de conhecimento + busca textual/vetorial, avaliação, cobertura publicada e [demo ao vivo](https://techscout-demo.onrender.com) |
-| Edge/automotivo | [AutoDiag](https://github.com/lucianoon/autodiag) | Diagnóstico OBD2, CLI/web e [pacote no PyPI](https://pypi.org/project/autodiag/) |
-| Otimização | [Sistema de Otimização Logística](https://github.com/lucianoon/sistema-otimizacao-logistica) | OR-Tools, CVRP, análise de custos e interface Streamlit |
-| RAG agêntico | [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | Recuperação iterativa com tool use e reformulação de consultas |
-| Multiagentes verticais | [multi-agents-recrutadores](https://github.com/lucianoon/multi-agents-recrutadores) | Aplicação de agentes em recrutamento e automação de fluxo específico |
-| Dados públicos para LLMs | [mcp-dados-br](https://github.com/lucianoon/mcp-dados-br) | Servidor MCP com 19 tools sobre IBGE, Banco Central, INMET, Câmara e Senado; [PyPI](https://pypi.org/project/mcp-dados-br/), MCP Registry e Smithery |
-| Automação GovTech | [vigia-licitacoes](https://github.com/lucianoon/vigia-licitacoes) | Monitor de licitações do PNCP com regras YAML, resumo por LLM, dedup em SQLite e alertas no Telegram |
+| RAG mensurável | [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) | Busca híbrida, scores por estágio, Recall@K/MRR e [API interativa](https://enterprise-rag-demo.onrender.com/docs) |
+| Fine-tuning | [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | T5 + LoRA, ablação de rank, ROUGE e [demo no Hugging Face](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo) |
+| GraphRAG | [TechScout AI](https://github.com/lucianoon/techscout-ai) | Grafo + busca textual/vetorial, baseline versionado e [demo](https://techscout-demo.onrender.com) |
+| Saúde pública | [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | Relatórios epidemiológicos auditáveis, API, worker e guardrails |
+| Engenharia de LLMs | [llm-course](https://github.com/lucianoon/llm-course) | Curso aberto em português com 19 módulos e laboratórios reproduzíveis |
+| GovTech | [vigia-licitacoes](https://github.com/lucianoon/vigia-licitacoes) | Monitor do PNCP com regras YAML, deduplicação e alertas no Telegram |
 
-## Estado do portfólio
+## Como eu trabalho
 
-Levantamento de 01/09/2026. A contagem é de funções de teste na `main`; a
-última coluna aponta a evidência externa mais forte de cada projeto.
-
-| Repositório | Testes | Evidência externa |
-|---|---:|---|
-| [Forgehand](https://github.com/lucianoon/forgehand) | 95 | Piloto medido; CI com PostgreSQL e Neo4j |
-| [AutoDiag](https://github.com/lucianoon/autodiag) | 283 | [Pacote no PyPI](https://pypi.org/project/autodiag/), release automatizado |
-| [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) | 55 | [Demo ao vivo](https://enterprise-rag-demo.onrender.com/docs), Recall@K e MRR na API |
-| [TechScout AI](https://github.com/lucianoon/techscout-ai) | 185 | [Demo ao vivo](https://techscout-demo.onrender.com), GraphRAG com Neo4j e Qdrant |
-| [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | 89 | Relatório de exemplo auditável; CodeQL no CI |
-| [mcp-dados-br](https://github.com/lucianoon/mcp-dados-br) | 61 | [PyPI](https://pypi.org/project/mcp-dados-br/), MCP Registry e Smithery; 19 tools de dados públicos |
-| [llm-course](https://github.com/lucianoon/llm-course) | 39 | 19 módulos com laboratórios reproduzíveis e portão de avaliação no CI |
-| [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | 37 | [Demo no Hugging Face](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo), ablação de rank |
-| [RAG Agentic System](https://github.com/lucianoon/rag-agentic-system) | 72 | Loop de tool use com modelo determinístico offline |
-| [vigia-licitacoes](https://github.com/lucianoon/vigia-licitacoes) | 59 | Monitor do PNCP com regras YAML e alertas no Telegram |
-| [Sistema de Otimização Logística](https://github.com/lucianoon/sistema-otimizacao-logistica) | 55 | OR-Tools, CVRP e Streamlit |
-| [Pulse Site](https://github.com/lucianoon/pulse-site) | 6 | `check --deploy` sem avisos e smoke do gunicorn no CI |
-| [multi-agents-recrutadores](https://github.com/lucianoon/multi-agents-recrutadores) | 28 | Demonstração de orquestração multiagente |
-
-Todos os repositórios ativos têm CI verde, licença, topics e Docker. Repositórios
-arquivados (orbit-ai-orchestrator, novaforge, fde-ai-platform) ficam fora da
-tabela de propósito.
-
-## Princípios de engenharia
-
-- **Avaliação antes de afirmação:** Recall@K, MRR, ROUGE, datasets e baselines versionados
-- **Degradação graciosa:** backends simulados e caminhos determinísticos quando modelos externos falham
-- **Produção verificável:** testes, CI, Docker, health checks, retries e execução durável
-- **Observabilidade:** custo, latência, falhas e decisões rastreadas por execução
-- **Stack principal:** Python, FastAPI, Django, PyTorch, Transformers, LangGraph, PostgreSQL, Qdrant e Neo4j
+- **Avaliação antes de afirmação:** datasets e baselines versionados, Recall@K,
+  MRR, ROUGE e análise explícita das limitações
+- **Degradação graciosa:** backends simulados e caminhos determinísticos para
+  executar e testar sem depender de modelos externos
+- **Produção verificável:** testes automatizados, CI, Docker, health checks,
+  retries e execução durável
+- **Observabilidade:** custo, latência, falhas e decisões rastreados por execução
 
 ## Foco profissional
 
