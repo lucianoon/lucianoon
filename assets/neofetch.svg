@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="640" viewBox="0 0 1400 640" role="img" aria-labelledby="title desc">
+  <title id="title">Luciano Oliveira — AI Engineer Neofetch profile</title>
+  <desc id="desc">Terminal-inspired profile showing AI engineering focus, stack, observability and evaluation practices.</desc>
+  <rect width="1400" height="640" rx="24" fill="#0d1117"/>
+  <rect x="1" y="1" width="1398" height="638" rx="23" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace">
+    <text x="52" y="58" font-size="24" fill="#8b949e">luciano@ai-engineer:~$ neofetch</text>
+
+    <g font-size="22" fill="#58a6ff">
+      <text x="72" y="132">             ╭──────────╮</text>
+      <text x="72" y="162">             │   LLM    │</text>
+      <text x="72" y="192">             ╰────┬─────╯</text>
+      <text x="72" y="222">                  │</text>
+      <text x="72" y="252">            ╭─────▼─────╮</text>
+      <text x="72" y="282">            │ LANGGRAPH │</text>
+      <text x="72" y="312">            ╰─────┬─────╯</text>
+      <text x="72" y="342">                  │</text>
+      <text x="72" y="372">          ┌───────┼───────┐</text>
+      <text x="72" y="402">          ▼       ▼       ▼</text>
+      <text x="72" y="432" fill="#3fb950">         RAG     TOOLS    STATE</text>
+      <text x="72" y="462">          │       │       │</text>
+      <text x="72" y="492">          └───────┼───────┘</text>
+      <text x="72" y="522">                  ▼</text>
+      <text x="72" y="552" fill="#d2a8ff">              EVALUATION</text>
+      <text x="72" y="582" fill="#f0883e">              PRODUCTION</text>
+    </g>
+
+    <g font-size="22">
+      <text x="660" y="116" fill="#58a6ff" font-weight="700">luciano@ai-engineer</text>
+      <text x="660" y="145" fill="#30363d">────────────────────────────────────────</text>
+      <text x="660" y="184" fill="#f0883e">OS</text><text x="820" y="184" fill="#c9d1d9">AI Engineering</text>
+      <text x="660" y="216" fill="#f0883e">Host</text><text x="820" y="216" fill="#c9d1d9">Production GenAI Systems</text>
+      <text x="660" y="248" fill="#f0883e">Kernel</text><text x="820" y="248" fill="#c9d1d9">Python · FastAPI · Pydantic</text>
+      <text x="660" y="280" fill="#f0883e">Role</text><text x="820" y="280" fill="#c9d1d9">AI/ML Developer</text>
+      <text x="660" y="312" fill="#f0883e">Focus</text><text x="820" y="312" fill="#c9d1d9">LLMs · Agents · RAG · GenAIOps</text>
+      <text x="660" y="360" fill="#d2a8ff">Agents</text><text x="820" y="360" fill="#c9d1d9">LangGraph · LangChain · LlamaIndex</text>
+      <text x="660" y="392" fill="#d2a8ff">Retrieval</text><text x="820" y="392" fill="#c9d1d9">Qdrant · BM25 · ColBERT · Hybrid</text>
+      <text x="660" y="424" fill="#d2a8ff">State</text><text x="820" y="424" fill="#c9d1d9">Redis · Checkpoints</text>
+      <text x="660" y="456" fill="#d2a8ff">Cloud</text><text x="820" y="456" fill="#c9d1d9">Azure · AWS</text>
+      <text x="660" y="488" fill="#d2a8ff">Observe</text><text x="820" y="488" fill="#c9d1d9">Langfuse · OpenTelemetry</text>
+      <text x="660" y="520" fill="#d2a8ff">Evals</text><text x="820" y="520" fill="#c9d1d9">Recall@K · MRR · nDCG · Groundedness</text>
+      <text x="660" y="570" fill="#3fb950">Status</text><text x="820" y="570" fill="#c9d1d9">building measurable AI systems</text>
+    </g>
+  </g>
+</svg>
