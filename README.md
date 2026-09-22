@@ -28,6 +28,14 @@ Plataforma multiagente para entrega de software com fan-out paralelo, execução
 - **Confiabilidade:** checkpoints em PostgreSQL e retomada após interrupções
 - **Evidência:** [piloto reproduzível com metodologia e limitações](https://github.com/lucianoon/forgehand/blob/main/docs/pilot-report-2026-07-20.md)
 
+### [EdgeVision](https://github.com/lucianoon/edgevision) — visão computacional em tempo real
+
+Detecção e rastreamento multicâmera levados de um baseline em PyTorch a um runtime C++/CUDA, com cada otimização justificada por uma medição.
+
+- **Pipeline:** NVDEC → kernel CUDA de pré-processamento → TensorRT FP16 → ByteTrack em C++
+- **Desempenho (Tesla T4):** 2,0 ms por frame, 675 fps agregados, 12 câmeras RTSP a 25 fps sem perda
+- **Evidência:** mAP COCO 0,404 @ 640, benchmarks por etapa e custo total de GPU de ~US$ 8
+
 ### [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) — retrieval mensurável
 
 Pipeline de RAG com busca híbrida, reranking e métricas por estágio para separar falhas de retrieval de falhas de geração.
@@ -63,6 +71,7 @@ Language       Python · SQL
 Backend        FastAPI · Pydantic
 Agents         LangGraph · LangChain · LlamaIndex
 Retrieval      Qdrant · BM25 · ColBERT · SentenceTransformers
+Vision         PyTorch · ONNX · TensorRT · CUDA · C++
 State/Data     Redis · PostgreSQL · SQLAlchemy
 Cloud          Azure · AWS · Azure AI Foundry · Amazon Bedrock
 Infra          Docker · Kubernetes · Terraform · CI/CD

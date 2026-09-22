@@ -21,6 +21,15 @@ execution, human gates and an LLM judge constrained by objective checks such as
 - **Reliability:** PostgreSQL checkpoints and recovery after interruptions
 - **Evidence:** [reproducible pilot with methodology and limitations](https://github.com/lucianoon/forgehand/blob/main/docs/pilot-report-2026-07-20.md)
 
+### 🎥 [EdgeVision](https://github.com/lucianoon/edgevision) — real-time computer vision
+
+Multi-camera object detection and tracking, taken from a PyTorch baseline to a
+C++/CUDA runtime, with every optimisation justified by a measurement.
+
+- **Pipeline:** NVDEC → CUDA pre-processing kernel → TensorRT FP16 → C++ ByteTrack
+- **Performance (Tesla T4):** 2.0 ms per frame, 675 fps aggregate, 12 live RTSP cameras at 25 fps with no drops
+- **Evidence:** COCO mAP 0.404 @ 640, per-stage benchmarks and about US$ 8 of total GPU spend
+
 ### 🚗 [AutoDiag](https://github.com/lucianoon/autodiag) — AI in a vertical product
 
 An OBD2 diagnostics tool for 2015+ vehicles, distributed as a Python package.
