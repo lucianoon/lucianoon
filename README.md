@@ -36,6 +36,15 @@ Detecção e rastreamento multicâmera levados de um baseline em PyTorch a um ru
 - **Desempenho (Tesla T4):** 2,0 ms por frame, 675 fps agregados, 12 câmeras RTSP a 25 fps sem perda
 - **Evidência:** mAP COCO 0,404 @ 640, benchmarks por etapa e custo total de GPU de ~US$ 8
 
+### [Aplicaí — Gestor de Liquidez Itaú](https://github.com/lucianoon/itau-gestor-liquidez-ia) — agentes com guardrails
+
+Assistente financeiro multiagente da Batalha de Agentes (Itaú Unibanco + Google): projeta 30 dias, reserva as contas e rende só a sobra, com a IA conversando, o código calculando e o cliente aprovando.
+
+- **Arquitetura:** Google ADK 2.x, com guardrails antes/depois do modelo e antes de cada ferramenta
+- **Confiança:** autorização assinada HMAC-SHA256 (60 s, uso único), execução idempotente e trilha de auditoria
+- **IA responsável:** LGPD, CVM 30 e Lei 14.181 como requisitos de design, não como rodapé
+- **Evidência:** 156 testes automatizados, ADRs documentados
+
 ### [Enterprise RAG System](https://github.com/lucianoon/enterprise-rag-system) — retrieval mensurável
 
 Pipeline de RAG com busca híbrida, reranking e métricas por estágio para separar falhas de retrieval de falhas de geração.
@@ -69,7 +78,7 @@ Deployment     → API, containers, CI/CD e cloud
 ```text
 Language       Python · SQL
 Backend        FastAPI · Pydantic
-Agents         LangGraph · LangChain · LlamaIndex
+Agents         LangGraph · LangChain · LlamaIndex · Google ADK
 Retrieval      Qdrant · BM25 · ColBERT · SentenceTransformers
 Vision         PyTorch · ONNX · TensorRT · CUDA · C++
 State/Data     Redis · PostgreSQL · SQLAlchemy
