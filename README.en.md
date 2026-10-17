@@ -28,7 +28,7 @@ C++/CUDA runtime, with every optimisation justified by a measurement.
 
 - **Pipeline:** NVDEC → CUDA pre-processing kernel → TensorRT FP16 → C++ ByteTrack
 - **Performance (Tesla T4):** 2.0 ms per frame, 675 fps aggregate, 12 live RTSP cameras at 25 fps with no drops
-- **Evidence:** COCO mAP 0.404 @ 640, per-stage benchmarks and about US$ 8 of total GPU spend
+- **Evidence:** COCO mAP 0.372 on the TensorRT FP16 @ 512 pipeline (FP32 reference: 0.404 @ 640), per-stage benchmarks and about US$ 8 of total GPU spend
 
 ### 🚗 [AutoDiag](https://github.com/lucianoon/autodiag) — AI in a vertical product
 
