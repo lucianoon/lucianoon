@@ -34,9 +34,9 @@ Detecção e rastreamento multicâmera levados de um baseline em PyTorch a um ru
 
 - **Pipeline:** NVDEC → kernel CUDA de pré-processamento → TensorRT FP16 → ByteTrack em C++
 - **Desempenho (Tesla T4):** 2,0 ms por frame, 675 fps agregados, 12 câmeras RTSP a 25 fps sem perda
-- **Evidência:** mAP COCO 0,404 @ 640, benchmarks por etapa e custo total de GPU de ~US$ 8
+- **Evidência:** mAP COCO 0,372 no pipeline TensorRT FP16 @ 512 (referência FP32: 0,404 @ 640), benchmarks por etapa e custo total de GPU de ~US$ 8
 
-### [Aplicaí — Gestor de Liquidez Itaú](https://github.com/lucianoon/itau-gestor-liquidez-ia) — agentes com guardrails
+### [Aplicaí — Gestor de Liquidez Itaú](https://github.com/lucianoon/aplicai) — agentes com guardrails
 
 Assistente financeiro multiagente da Batalha de Agentes (Itaú Unibanco + Google): projeta 30 dias, reserva as contas e rende só a sobra, com a IA conversando, o código calculando e o cliente aprovando.
 
