@@ -70,6 +70,22 @@ Brazil, INMET, the Chamber of Deputies and the Federal Senate.
   retries and durable execution
 - **Observability:** cost, latency, failures and decisions tracked per run
 
+## Main stack
+
+```text
+Language       Python · SQL
+Backend        FastAPI · Pydantic
+Agents         LangGraph · LangChain · LlamaIndex · Google ADK
+Retrieval      Qdrant · BM25 · ColBERT · SentenceTransformers
+Vision         PyTorch · ONNX · TensorRT · CUDA · C++
+State/Data     Redis · PostgreSQL · SQLAlchemy
+Cloud          AWS (Bedrock · SageMaker · S3) · Bedrock AgentCore
+Infra          Docker · GitHub Actions (CI/CD) · Render
+Observability  Langfuse · OpenTelemetry · Prometheus · Grafana
+```
+
+Each line above maps to code in the repositories listed on this profile.
+
 ## Professional focus
 
 **Forward Deployed AI Engineering:** turning business problems into reliable,

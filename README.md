@@ -82,10 +82,13 @@ Agents         LangGraph · LangChain · LlamaIndex · Google ADK
 Retrieval      Qdrant · BM25 · ColBERT · SentenceTransformers
 Vision         PyTorch · ONNX · TensorRT · CUDA · C++
 State/Data     Redis · PostgreSQL · SQLAlchemy
-Cloud          Azure · AWS · Azure AI Foundry · Amazon Bedrock
-Infra          Docker · Kubernetes · Terraform · CI/CD
+Cloud          AWS (Bedrock · SageMaker · S3) · Bedrock AgentCore
+Infra          Docker · GitHub Actions (CI/CD) · Render
 Observability  Langfuse · OpenTelemetry · Prometheus · Grafana
 ```
+
+Cada linha acima tem código correspondente nos repositórios deste perfil. O que
+ainda não está aqui é o que ainda não foi construído.
 
 ## Princípios
 
