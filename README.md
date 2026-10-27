@@ -61,6 +61,22 @@ Servidor MCP para consultar dados públicos brasileiros a partir de agentes e as
 - **Engenharia:** cache, retry, transporte stdio/HTTP, testes offline e Docker
 - **Distribuição:** `uvx mcp-dados-br`
 
+### [llm-course](https://github.com/lucianoon/llm-course) — curso de engenharia de LLMs
+
+Curso aberto em português para entender, customizar, avaliar e servir modelos de linguagem, do zero à produção, com laboratórios que tornam as hipóteses mensuráveis.
+
+- **Currículo:** Fase 0 + 19 módulos e 36 scripts de laboratório; a rota inteira roda em CPU
+- **Percurso:** atenção e transformer do zero, SFT, LoRA, RAG, avaliação, agentes e servir em produção
+- **Evidência:** repositório mais estrelado do perfil (18 stars); [registro de alegações, reproduções e limites](https://github.com/lucianoon/llm-course/blob/main/EVIDENCIAS.md)
+
+### [sdd-kit](https://github.com/lucianoon/sdd-kit) — spec-driven development
+
+Specification-Driven Development para desenvolvimento assistido por IA, com verificação por ferramentas independentes do LLM.
+
+- **Contrato:** o agente escolhe como implementar; a spec define o que é correto; o `sdd` decide se está pronto
+- **Verificação:** `check`, `diff`, mutação e evals estatísticos fora do agente; o próprio kit se verifica com onze specs
+- **Distribuição:** publicado no [PyPI como `sdd-kit-ai`](https://pypi.org/project/sdd-kit-ai/) (`pipx install sdd-kit-ai`)
+
 ## Engenharia de produção
 
 ```text
