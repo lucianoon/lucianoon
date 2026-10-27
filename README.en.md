@@ -49,6 +49,25 @@ Brazil, INMET, the Chamber of Deputies and the Federal Senate.
 - **Adoption:** published on [PyPI](https://pypi.org/project/mcp-dados-br/), MCP Registry and Smithery
 - **Engineering:** caching, retries, stdio/HTTP transports, offline tests and Docker
 
+### 🧠 [llm-course](https://github.com/lucianoon/llm-course) — LLM engineering course
+
+An open Portuguese-language course to understand, customize, evaluate and serve
+language models, from scratch to production, with labs that make hypotheses
+measurable.
+
+- **Curriculum:** Phase 0 + 19 modules and 36 lab scripts; the full path runs on CPU
+- **Path:** attention and a transformer from scratch, SFT, LoRA, RAG, evaluation, agents and serving in production
+- **Evidence:** most-starred repo on this profile (18 stars); [claims, reproductions and limits](https://github.com/lucianoon/llm-course/blob/main/EVIDENCIAS.md)
+
+### 📐 [sdd-kit](https://github.com/lucianoon/sdd-kit) — spec-driven development
+
+Specification-Driven Development for AI-assisted work, with verification by
+independent tools outside the LLM.
+
+- **Contract:** the agent chooses how to implement; the spec defines what is correct; `sdd` decides whether it is ready
+- **Verification:** `check`, `diff`, mutation and statistical evals outside the agent; the kit checks itself with eleven specs
+- **Distribution:** [published on PyPI as `sdd-kit-ai`](https://pypi.org/project/sdd-kit-ai/) (`pipx install sdd-kit-ai`)
+
 ## Other selected work
 
 | Area | Project | Primary evidence |
@@ -57,7 +76,6 @@ Brazil, INMET, the Chamber of Deputies and the Federal Senate.
 | Fine-tuning | [LoRA TweetSumm](https://github.com/lucianoon/lora-tweetsumm) | T5 + LoRA, rank ablation, ROUGE and a [Hugging Face demo](https://huggingface.co/spaces/lucianoon/lora-tweetsumm-demo) |
 | GraphRAG | [TechScout AI](https://github.com/lucianoon/techscout-ai) | Graph + textual/vector retrieval, a versioned baseline and a [live demo](https://techscout-demo.onrender.com) |
 | Public health | [SRAG Health Monitor](https://github.com/lucianoon/srag-health-monitor) | Auditable epidemiological reports, API, worker and guardrails |
-| LLM engineering | [llm-course](https://github.com/lucianoon/llm-course) | Open Portuguese-language course with 19 modules and reproducible labs |
 | GovTech | [vigia-licitacoes](https://github.com/lucianoon/vigia-licitacoes) | PNCP monitor with YAML rules, deduplication and Telegram alerts |
 
 ## How I work
